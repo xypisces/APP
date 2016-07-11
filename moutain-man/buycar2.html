@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>我的生活</title>
+    <title>购物车</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -21,6 +21,34 @@
 	color: #fff;
 	font-size: 1.2rem;
 }
+.dizhi{
+    list-style: none;
+    padding: 0;
+    margin-top: 7rem;
+}
+.dizhi li{
+    text-align: center;
+}
+.dizhii{
+    width: 30%;
+}
+.dizhit{
+    margin-top: 0.5rem;
+    color: #999;
+    font-size: 0.7rem;
+}
+.dizhiindex{
+    font-size: 0.8rem;
+    display: inline-block;
+    background-color: #f60;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.2rem;
+    color: #fff;
+    margin-top: 0.5rem;
+}
 	</style>
   </head>
   <body>
@@ -29,21 +57,14 @@
         	<header class="bar bar-nav bar1">
   				<h1 class="title title1">山里汉</h1>
 			</header>
-        	<div class="content">
-        		<h1>asd</h1>
-        		<h1>dsa</h1>
-        		<h1>dasd</h1>
-        		<h1>asd</h1>
-        		<h1>dasd</h1>
-        		<h1>asd</h1>
-        		<h1>dsad</h1>
-        		<h1>asd</h1>
-        		<h1>asd</h1>
-        		<h1>asd</h1>
-        	</div>
-
+        	<ul class="dizhi">
+                <li><img src="images/buycar6.png" alt="地址" class="dizhii"></li>
+                <li class="dizhit">您的购物车还是空的</li>
+                <li ><a href="#" class="dizhiindex">去首页逛逛</a></li>
+            </ul>
+            
         	<nav class="bar bar-tab">
-			  <a class="tab-item external active" href="#">
+			  <a class="tab-item external" href="#">
 			    <span class="icon icon-shouye-copy-copy"></span>
 			    <span class="tab-label">首页</span>
 			  </a>
@@ -51,7 +72,7 @@
 			    <span class="icon icon-fenlei"></span>
 			    <span class="tab-label">分类</span>
 			  </a>
-			  <a class="tab-item external" href="#">
+			  <a class="tab-item external active" href="#">
 			    <span class="icon icon-gouwuche"></span>
 			    <span class="tab-label">购物车</span>
 			  </a>
