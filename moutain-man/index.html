@@ -10,7 +10,6 @@
 	
     <link rel="stylesheet" href="css/sm.css">
     <link rel="stylesheet" href="css/sm-extend.min.css">
-    <link rel="stylesheet" href="font/iconfont.css">
 
 	<style>
 .bar1{
@@ -56,6 +55,10 @@
 .foot{
     height: 3rem;
 }
+#lunbo{
+    padding-bottom: 0;
+  }
+
 
 	</style>
   </head>
@@ -63,11 +66,11 @@
     <div class="page-group">
         <div class="page page-current">
         	<header class="bar bar-nav bar1">
-                <a class="icon icon-fanhui pull-left"></a>
+               <!--  <a class="icon icon-fanhui pull-left"></a> -->
   				<h1 class="title title1">山里汉</h1>
 			</header>
         	<div class="content">
-        		<div class="bar bar-header-secondary">
+        		<!-- <div class="bar bar-header-secondary">
                   <div class="searchbar">
                     <a class="searchbar-cancel">取消</a>
                     <div class="search-input">
@@ -75,9 +78,18 @@
                       <input type="search" id='search' placeholder='输入关键字...'/>
                     </div>
                   </div>
+                </div> -->
+               <!--  <img src="images/index.png" alt="图片" class="indeximg" style="margin-top: 0;"> -->
+               <div class="content">
+               <div class="swiper-container" data-space-between='10' id="lunbo">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/index.png" alt="" class="indeximg" style="margin-top: 0;"></div>
+                  <div class="swiper-slide"><img src="images/index.png" alt="" class="indeximg" style="margin-top: 0;"></div>
+                  <div class="swiper-slide"><img src="images/index.png" alt="" class="indeximg" style="margin-top: 0;"></div>      
                 </div>
-                <img src="images/index.png" alt="图片" class="indeximg">
-
+                  <div class="swiper-pagination"></div>
+                  
+              </div>
               <div class="card demo-card-header-pic" id="indexdiv">
                 <div valign="bottom" class="card-header color-white no-border no-padding">
                   <img class='card-cover' src="images/index1.png" alt="图片">
@@ -136,6 +148,17 @@
     <script type='text/javascript' src='js/zepto.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='js/sm.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='js/sm-extend.min.js' charset='utf-8'></script>
-
+     <script>
+     $(function() {
+  $(".swiper-container").swiper({
+        pagination: '.swiper-pagination',     
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2000,
+        autoplayDisableOnInteraction: false
+    });
+}); 
+    </script>
   </body>
 </html>

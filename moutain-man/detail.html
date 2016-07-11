@@ -183,6 +183,13 @@
 		background-color: #f60;
 		color: #fff;
 	}
+	.back{
+		z-index: 100;
+		position: absolute;
+		width: 10%;
+		top: 1rem;
+		left: 1rem;
+	}
     </style>
 
   </head>
@@ -190,6 +197,7 @@
     <div class="page-group">
         <div class="page page-current">
         <div class="content">
+        <a href="#"><img src="images/back.png" alt="图片" class="back"></a>
         	<div class="content">
         		<!-- <img class="detailimg" src="images/detail-head.png" alt="图片"> -->
         		<div class="swiper-container" data-space-between='10' id="lunbo">
@@ -343,9 +351,16 @@
     <script type='text/javascript' src='js/sm.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='js/sm-extend.min.js' charset='utf-8'></script>
 	<script>
-		$(function() {
-		  $.init();
-		});
-	</script>
+     $(function() {
+  $(".swiper-container").swiper({
+        pagination: '.swiper-pagination',     
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2000,
+        autoplayDisableOnInteraction: false
+    });
+}); 
+    </script>
   </body>
 </html>
