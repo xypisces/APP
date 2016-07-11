@@ -42,12 +42,12 @@
     font-size: 1rem;
 }
 
-#lb{
+#lb,#lb1{
     margin: 0;
 }
 .icon-lbs{
-    padding-top: 0.5rem;
-    padding-bottom:0.5rem;
+    padding-top: 0.7rem;
+    padding-bottom:0.7rem;
     font-size: 1.5rem;
 }
 #dizhiul{
@@ -70,12 +70,110 @@
     background: url(images/caidai.png) no-repeat;
     height: 0.3rem;
 }
+.finish{
+    width: 100%;
+    background-color: #fff;
+}
+
+.finishimg1{
+    width: 25%;
+    padding: 0.7rem;
+}
+.textul{
+
+    padding:0;
+    margin: 0;
+    list-style: none;
+    padding-top: 0.5rem;
+}
+.textli1,.toright1{
+    font-size: 0.8rem;
+}
+.textli2{
+    font-size: 0.7rem;
+    background-color: #f60;
+    color: #fff;
+}
+.textli3{
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+    color: #999;
+}
+.toright1,.toright2,.toright3{
+    margin-right: 0.7rem;
+}
+.toright2{
+    font-size: 0.7rem;
+    color: #999;
+}
+.toright3{
+    color: #999;
+    font-size: 0.6rem;
+}
+.comments{
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+.finishsay{
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    background-color: #fff;
+    border:1px solid #999;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0;
+    color: #999;
+}
+.finishsay:hover{
+  background-color: #f60;
+  color: #fff;
+}
+.icon-comments{
+  font-size: 0.8rem;
+  margin-right: 0.2rem;
+}
+#itempad,#itempad1,#itempad3{
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  font-size: 0.7rem;
+}
+.foot{
+  height: 3rem;
+}
+.message{
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 2rem;
+}
+.msg-p{
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+.msg-ul{
+  list-style: none;
+}
+.msg-li{
+  font-size: 0.7rem;
+  color: #999;
+  margin-bottom: 0.3rem;
+}
+.msg-time{
+  float: right;
+  margin-right: 1rem;
+}
+.icon-fanhui{
+  color: #fff;
+}
 	</style>
   </head>
   <body>
     <div class="page-group">
         <div class="page page-current">
         	<header class="bar bar-nav bar1">
+          <a class="icon icon-fanhui pull-left"></a>
   				<h1 class="title title1">订单详情</h1>
 			</header>
         	<div class="content">
@@ -95,6 +193,96 @@
                 </ul>
               </div>
               <div class="caidai"></div>
+              <div class="finish clearfix">
+                  
+                      <img src="images/zidan.png" alt="图片" class="finishimg1 pull-left">
+                  
+                  <div class="finishtext pull-left">
+                      <ul class="textul">
+                          <li class="textli1">山里汉原生鸡蛋</li>
+                          <li ><span class="textli2">满减</span></li>
+                          <li class="textli3">规格:1kg/份</li>
+                      </ul>
+                  </div>
+                  <div class="finishtext pull-right">
+                      <ul class="textul">
+                          <li><span class="toright1">¥24元</span></li>
+                          <li><del class="toright2">¥24元</del></li>
+                          <li><span class="toright3">X1</span></li>
+                      </ul>
+                  </div>             
+              </div>
+              <div class="comments clearfix">
+                  <a href="#" class="finishsay pull-left"><i class="icon icon-comments"></i>我要评论</a>
+              </div>
+              <div class="finish clearfix">
+                  
+                      <img src="images/zidan.png" alt="图片" class="finishimg1 pull-left">
+                  
+                  <div class="finishtext pull-left">
+                      <ul class="textul">
+                          <li class="textli1">山里汉原生鸡蛋</li>
+                          <li ><span class="textli2">满减</span></li>
+                          <li class="textli3">规格:1kg/份</li>
+                      </ul>
+                  </div>
+                  <div class="finishtext pull-right">
+                      <ul class="textul">
+                          <li><span class="toright1">¥24元</span></li>
+                          <li><del class="toright2">¥24元</del></li>
+                          <li><span class="toright3">X1</span></li>
+                      </ul>
+                  </div>             
+              </div>
+              <div class="comments clearfix">
+                  <a href="#" class="finishsay pull-left"><i class="icon icon-comments"></i>我要评论</a>
+              </div>
+              <div class="list-block" id="lb">
+                <ul>
+                  <li class="item-content item-link">                   
+                    <div class="item-inner" id="itempad1">
+                      <div class="item-title">满减活动</div>
+                      <div class="item-after">省50元,组合优惠</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="list-block" id="lb">
+                <ul>
+                  <li class="item-content item-link">
+                    
+                    <div class="item-inner" id="itempad">
+                      <div class="item-title">配送服务</div>
+                      <div class="item-after">快递,免邮</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="list-block" id="lb">
+                <ul>
+                  <!-- Text inputs -->
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner" id="itempad3">
+                        <div class="item-title label">卖家留言</div>
+                        <div class="item-input">
+                          <input type="text" placeholder="选填,与卖家达成的协议等">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="message">
+                <p class="msg-p">物流信息</p>
+                <ul class="msg-ul">
+                  <li class="msg-li">您的订单开始处理 <span class="msg-time">08:42:13</span></li>
+                  <li class="msg-li">您的订单待配货<span class="msg-time">08:43:13</span></li>
+                  <li class="msg-li">商家正通知快递公司揽件<span class="msg-time">08:45:13</span></li>
+                  <li class="msg-li">您的包裹已经出发<span class="msg-time">08:48:13</span></li>
+                </ul>
+              </div>
+              <div class="foot"></div>
         	</div>
             <div class="bar bar-footer">
                 <span class="sum">合计:</span>
