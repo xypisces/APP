@@ -303,6 +303,7 @@ a:active {
   left: 0;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+  padding-bottom: 3rem;
 }
 .bar-nav ~ .content {
   top: 2.2rem;
@@ -345,7 +346,8 @@ a:active {
 /* === Content Block === */
 .content-block {
   margin: 1.75rem 0;
-  padding: 0 0.75rem;
+  padding: 0;
+  margin-top: 0.5rem;
   color: #6d6d72;
 }
 .content-block-title {
@@ -4618,4 +4620,215 @@ html:not(.watch-active-state) .theme-white label.label-radio:active,
 }
 .theme-white .range-slider input[type="range"]:after {
   background: #fff;
+}
+
+/*地址*/
+.bar2{
+  background-color: #f60;
+}
+.title1{
+  font-family: "微软雅黑";
+  color: #fff;
+  font-size: 1.0rem;
+}
+.dizhi{
+  list-style: none;
+  padding: 0;
+  margin-top: 7rem;
+}
+.dizhi li{
+  text-align: center;
+}
+.dizhii{
+  width: 40%;
+}
+.dizhit{
+  margin-top: 0.5rem;
+  color: #f60;
+  font-size: 0.8rem;
+}
+.icon-fanhui{
+    color: #fff;
+}
+.ad3{
+    margin: 0px;
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0.2rem;
+    background-color: #fff;
+    list-style: none;
+}
+.ad3 li{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.admob{
+    margin-left: 2rem;
+}
+.adad{
+    color: #999;
+    font-size: 0.7rem;
+}
+.icon-yuanquan{
+    color: #333;
+}
+.icon-hookring2{
+    color: #f60;
+}
+.del{
+    margin-right: 1rem;
+    color: #333;
+    border: 1px solid #333;
+    font-size: 0.6rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+.del:hover{
+    color: #fff;
+    background-color: #f60;
+}
+.admo{
+    margin-left: 0.2rem;
+    font-size: 0.6rem;
+}
+.navcolor{
+    background-color: #fff;
+}
+#cola{
+  background-color: #f60;
+}
+#cola a{
+  color: #fff;
+}
+.icon-fanhui{
+  color: #fff;
+}
+
+/*个人账户*/
+#account{
+  background-color: #fff;
+}
+.top{
+  background-color: #fff;
+  margin: 0;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.top-img{
+  width: 20%;
+}
+.top-ul{
+  padding-top: 3rem;
+  padding-left: 0;
+  list-style: none;
+  width: 100%;
+}
+.top-li{
+  margin:0.7rem;
+}
+.top-money{
+  color: #f60;
+  font-size: 1.5rem;
+}
+.top-help{
+  color: #999;
+}
+.top-ul li{
+  text-align: center;
+}
+.icon-aixin01{
+  font-size: 0.7rem;
+  color: #fff;
+}
+.bottom{
+  background-color: #f60;
+  color: #fff;
+  font-size: 0.7rem;
+  width: 100%;
+}
+.bottom-ul{
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+.bottom-ul li{
+  width: 100%;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+.li-type{
+  margin-left: 3rem;
+}
+
+/*待发货*/
+.ulhead{
+  margin:0;
+  width: 100%;
+}
+.lileft{
+  font-size: 0.7rem;
+  list-style: none;
+  width: 50%;
+  display: inline-block;
+  font-family: "微软雅黑";
+}
+.liright{
+  font-size: 0.7rem;
+  list-style: none;
+  color: #f60;
+  font-family: "微软雅黑";
+  float: right;
+}
+.litext{
+  margin-left: -1rem;
+  width: 50%;
+  display: inline-block;
+  font-size: 0.6rem;
+  color: #999;
+}
+.limessage{
+  margin-top: 0.3rem;
+  float: right;
+  list-style: none;
+  color: #999;
+  font-size: 0.6rem;
+}
+.s1{
+  display:block;
+  width: 100%;
+  float: left;
+}
+.s2{
+  color: #f60;
+}
+.s3{
+  color: #999;
+  font-size: 0.6rem;
+}
+#ulleft{
+  float: left;
+  padding-left: 0px;
+}
+.ulright{
+  float: right;
+}
+.left1{
+  color: #f60;
+  font-size: 0.7rem;
+}
+.left2{
+  color: #999;
+  font-size: 0.5rem;
+  margin-top: 0.3rem;
+  letter-spacing: 0.1rem;
+}
+.right1{
+  color: #f60;
+}
+.cancel{
+  border-radius: 0.3rem;
+  border:1px solid #999;
+  color: #999;
+  padding: 0.1rem 0.7rem;
 }
