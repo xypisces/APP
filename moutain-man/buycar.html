@@ -11,137 +11,61 @@
     <link rel="stylesheet" href="css/sm.css">
     <link rel="stylesheet" href="css/sm-extend.min.css">
     
-
-	<style>
-.bar1{
-	background-color: #f60;
-}
-.title1{
-	font-family: "微软雅黑";
-	color: #fff;
-	font-size: 1.2rem;
-}
-.attend{
-        background-color: #f60;
-        color: #fff;
-        width: 30%;
-        padding: 0.4rem;
-        text-align: center;
-        vertical-align: middle;
-    }
-.sum{
-    text-align: center;
-    display: inline-block;
-    width: 10%;
-    font-size: 0.6rem;
-}
-.summoney{
-    padding-top: 0.2rem;
-    display: inline-block;
-    color: #f60;
-    font-size: 1rem;
-}
-.buycard{
-    background-color: #fff;
-     padding: 0.6rem;
-}
-.buyimg{
-    width: 40%;
-    background-color: #fff;
-}
-.buyimage{
-    width: 100%;
-}
-
-.listul{
-    font-size: 0.6rem;
-    list-style: none;
-    padding: 0;
-    margin: 0; 
-    width: 60%;
-    height: 100%;
-}
-
-.list1{
-    font-size: 0.8rem;
-    margin-left: 0.5rem;
-}
-.list2{
-    font-size: 0.6rem;
-    color: #999;
-    margin-left: 0.5rem;
-}
-.icon-yuanquanjiahao{
-    color: #f60;
-    font-size: 0.9rem;
-    padding-left: 0.4rem;
-
-}
-.icon-yuanquanjianhao{
-    margin-left: 6rem;
-    color: #f60;
-    font-size: 0.9rem;
-    padding-right: 0.4rem;
-   
-}
-
-.icons{
-    display: inline-block;
-
-}
-.list4{
-  
-    width: 15%;
-    display: inline-block;
-}
-.list5{
-    font-size: 1.2rem;
-    color: #f60;
-    padding-top: 2rem;
-    margin-left: 0.5rem;
-}
-.listfoot{
-    margin-top: 1.8rem;
-}
-.contentfoot{
-    height: 6rem;
-}
-.cler{
-    clear: both;
-}
-.icon-fanhui{
-    color: #fff;
-}
-	</style>
   </head>
   <body>
   
     <div class="page-group">
         <div class="page page-current">
-        	<header class="bar bar-nav bar1">
+        	<header class="bar bar-nav bar2">
                 <a class="icon icon-fanhui pull-left"></a>
   				<h1 class="title title1">山里汉</h1>
 			</header>
 
-        	<div class="content">
+        	<div class="content">          
                 <div class="buycard">
-                    <div class="buyimg ">
-                        <img src="images/buycar1.png" alt="图片" class="buyimage pull-left">
+                    <div class="buycard-check pull-left">
+                        <a href="#"><span class="icon icon-hookring2 icon-yuanquan danxuan"></span></a>
                     </div>
-                    <div class="buylitst ">
+                    <div class="buycard-img pull-left">
+                        <img src="images/buycar1.png" alt="图片" class="buyimage">
+                    </div>
+                    <div class="buycard-ul pull-left">
                         <ul class="listul pull-left">
                             <li><span class="list1">泰国龙眼(大)</span><i class="icon icon-jiaochacross80 pull-right"></i></li>
                             <li><span class="list2">A级/约500g/份</span></li>
-                            <li class="pull-right"><a href="#" class="icons"><i class="icon icon-yuanquanjianhao" ></i></a><input type="text" value="10" class="list4"><a href="#"><i class="icon icon-yuanquanjiahao"></i></a></li>
+                            <li class="pull-right"><a href="#" class="icons"><i class="icon icon-yuanquanjianhao" ></i></a>10<a href="#"><i class="icon icon-yuanquanjiahao"></i></a></li>
                             <li class="listfoot"><span class="list5">¥16.9</span><del class="list6">¥28.8</del></li>
                         </ul>
                     </div>
-                    <div class="cler"></div>    
+                     <div class="cler"></div>
                 </div>
+
+                <div class="buycard">
+                    <div class="buycard-check pull-left">
+                        <a href="#"><span class="icon icon-hookring2 icon-yuanquan danxuan"></span></a>
+                    </div>
+                    <div class="buycard-img pull-left">
+                        <img src="images/buycar1.png" alt="图片" class="buyimage">
+                    </div>
+                    <div class="buycard-ul pull-left">
+                        <ul class="listul pull-left">
+                            <li><span class="list1">泰国龙眼(大)</span><i class="icon icon-jiaochacross80 pull-right"></i></li>
+                            <li><span class="list2">A级/约500g/份</span></li>
+                            <li class="pull-right"><a href="#" class="icons"><i class="icon icon-yuanquanjianhao" ></i></a>10<a href="#"><i class="icon icon-yuanquanjiahao"></i></a></li>
+                            <li class="listfoot"><span class="list5">¥16.9</span><del class="list6">¥28.8</del></li>
+                        </ul>
+                    </div>
+                     <div class="cler"></div>
+                </div>
+
+                
+
                 <div class="contentfoot"></div>
         	</div>
 
             <div class="bar bar-footer-secondary">
+                <a href="#" ><span class="icon icon-hookring2 icon-yuanquan" id="check"></span></a>
+                <span>全选</span>
                 <span class="sum">合计:</span>
                 <span class="summoney">¥777</span>
               <a href="#" class="attend pull-right">订单提交</a>
@@ -170,6 +94,19 @@
     <script type='text/javascript' src='js/zepto.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='js/sm.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='js/sm-extend.min.js' charset='utf-8'></script>
-
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js" charset='utf-8' ></script>
+    <script>
+        $(function(){
+            
+            $("#check").click(function(){
+                $(".icon-hookring2").each(function(){
+                     $(this).toggleClass("icon-yuanquan");
+                });
+            });
+            $(".danxuan").click(function(){
+                $(this).toggleClass("icon-yuanquan");
+            });
+        });
+    </script>
   </body>
 </html>
