@@ -5579,3 +5579,24 @@ html:not(.watch-active-state) .theme-white label.label-radio:active,
   width: 50%;
   height: 6rem;
 }
+
+/* 图标 */
+
+.index-tu{
+  background-color: #fff;
+}
+.index-tu a{
+  float: left;
+  display: block;
+  width: 25%;
+  padding: 0.5rem 1rem;
+}
+.index-tu img{
+  width: 100%;
+  display: inline-block;
+}
+.index-tu p{
+  font-size: 0.5rem;
+  margin: 0;
+  text-align: center;
+}
