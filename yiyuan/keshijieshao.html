@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>科室介绍</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/sm.css">
+    <link rel="stylesheet" href="css/sm-extend.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+     <div class="page-group">
+        <div class="page page-current">
+             <!-- 头部  -->
+            <header class="bar bar-nav">
+              <a href="#" class="view-head pull-left">
+                <img src="img/fanhui.png" alt="返回" class="head-img">
+              </a>
+              <span class="head-span">科室介绍</span>
+              <a href="#" class="my-btn pull-right view-head2"><img src="img/more.png" alt="导航" class="head-img2"></a>
+            </header>
+
+
+            <div class="content">
+              <ul class="view-ul">
+                <a href="#"><li class="view-li">
+                  <img src="img/neik.png" alt="内科" class="view-img">
+                  <span class="li-span">内科系统</span>
+                  <p class="li-p">神经内科,心血管内科,呼吸内科,消化内科,内分泌内科,新生儿内科,重症医学科(ICU),感染性疾病科,中医科,康复医学科...</p>
+                </li></a>
+                <a href="#"><li class="view-li">
+                  <img src="img/waik.png" alt="内科" class="view-img">
+                  <span class="li-span">外科系统</span>
+                  <p class="li-p">普外科,胸心外科,烧伤科,甲乳外科,泌尿外科,神经外科,脊柱外科,骨关节外科,手显微外科,产科,妇科,眼耳鼻咽喉科,肛肠科,皮肤科,口腔科,手术麻醉科...</p>
+                </li></a>
+                <a href="#"><li class="view-li">
+                  <img src="img/jizhenk.png" alt="内科" class="view-img">
+                  <span class="li-span">门急诊</span>
+                  <p class="li-p">门诊部,急诊科</p>
+                </li></a>
+                <a href="#"><li class="view-li">
+                  <img src="img/yijik.png" alt="内科" class="view-img">
+                  <span class="li-span">医技科室</span>
+                  <p class="li-p">检验科,超声影像科,放射科,功能科,心脑电,内窥镜,病理科</p>
+                </li></a>
+                <a href="#"><li class="view-li">
+                  <img src="img/tijiank.png" alt="内科" class="view-img">
+                  <span class="li-span">体检科</span>
+                  <p class="li-p">体检科</p>
+                </li></a>
+                <a href="#"><li class="view-li">
+                  <img src="img/shek.png" alt="内科" class="view-img">
+                  <span class="li-span">社康中心</span>
+                  <p class="li-p">社区健康服务中心</p>
+                </li></a>
+              </ul>
+            </div>
+
+        </div>
+     </div>
+    <!-- 侧边栏 -->
+      <div class="panel-overlay"></div>
+      <div class="panel panel-left panel-cover theme-dark" id='panel-js-demo'>
+        <div class="content-block">
+          <ul class="cebian">
+            <a a target="_blank" href="/">
+            <li class="cebian-li">网站首页</li>
+            </a>
+            {dede:channelartlist typeid='1,1'}
+
+            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+            <li class="cebian-li">医院概况<div class="cebian-sanjiao"></div></li>
+            </a>
+          {/dede:channelartlist}
+                {dede:channelartlist typeid='2,2'}
+
+            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+            <li class="cebian-li">新闻动态<div class="cebian-sanjiao"></div></li>
+            </a>
+            {/dede:channelartlist}
+                {dede:channelartlist typeid='4,4'}
+
+            <a target="_blank"  title="{dede:field name='typename'/}">
+            <li class="cebian-li">科室介绍<div class="cebian-sanjiao"></div></li>
+            </a>
+            {/dede:channelartlist}
+              {dede:channelartlist typeid='58,58'}
+
+            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+            <li class="cebian-li">网上服务<div class="cebian-sanjiao"></div></li>
+            </a>
+            {/dede:channelartlist}
+                {dede:channelartlist typeid='62,62'}
+
+            <a target="_blank" href="{dede:field name='typeurl'/}" title="名医荟萃">
+            <li class="cebian-li">名医荟萃<div class="cebian-sanjiao"></div></li>
+            </a>
+            {/dede:channelartlist}
+                    {dede:channelartlist typeid='51,51'}
+
+            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+            <li class="cebian-li">科研教学<div class="cebian-sanjiao"></div></li>
+            </a>
+            {/dede:channelartlist}
+                {dede:channelartlist typeid='75,75'}
+
+            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+            <li class="cebian-li">医院文化<div class="cebian-sanjiao"></div></li>
+            </a>
+            {/dede:channelartlist}
+                      {dede:channelartlist typeid='50,50'}
+
+            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+            <li class="cebian-li">护理园地<div class="cebian-sanjiao"></div></li>
+            </a>
+            {/dede:channelartlist}
+                      {dede:channelartlist typeid='327,327'}
+
+            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+            <li class="cebian-li">健康小屋<div class="cebian-sanjiao"></div></li>
+            </a>
+             {/dede:channelartlist}
+          </ul>
+
+        </div>
+      </div>
+    <script type='text/javascript' src='js/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='js/sm-extend.min.js' charset='utf-8'></script>
+     <script>
+      $(document).on("click", ".my-btn", function() {
+      $.openPanel("#panel-js-demo");
+    });
+    </script>
+
+  </body>
+</html>
