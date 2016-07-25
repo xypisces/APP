@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="/sc2016/css/sm.css">
+    <link rel="stylesheet" href="/sc2016/css/sm-extend.min.css">
+    <link rel="stylesheet" href="/sc2016/css/style.css">
+
+  </head>
+  <body>
+     <div class="page-group">
+        <div class="page page-current">
+             <!-- 头部  -->
+            <header class="bar bar-nav">
+              <a href="#" class="view-head pull-left">
+                <img src="/sc2016/img/fanhui.png" alt="返回" class="head-img">
+              </a>
+              <span class="head-span">名医荟萃</span>
+              <a href="javascript:history.back(-1);" class="my-btn pull-right view-head2"><img src="/sc2016/img/more.png" alt="导航" class="head-img2"></a>
+            </header>
+
+
+            <div class="content">
+              <div class="buttons-tab">
+                <a href="#tab0" class="tab-link button">专家介绍</a>
+                <a href="#tab1" class="tab-link active button">内科系统</a>
+                <a href="#tab2" class="tab-link button">外科系统</a>
+                <a href="#tab3" class="tab-link button">门诊科</a>
+                <a href="#tab4" class="tab-link button">医技科室</a>
+                <a href="#tab5" class="tab-link button">体检科</a>
+              </div>
+              <div class="content-block">
+                <div class="tabs">
+
+                  <div id="tab0" class="tab">
+                    <div class="content-block">
+                      <ul class="my-ul clearfix">
+					  {dede:arclist typeid='62' row='30' infolen='230'  isweight='y' orderby='weight'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+                    </div>
+                  </div>
+
+
+                  <div id="tab1" class="tab active">
+                    <div class="content-block">
+                      <h3>
+                        <img src="/sc2016/images/mytit_20.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist  titlelen=32  channelid='17'  keyword='神经内科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					   <h3>
+                        <img src="/sc2016/images/mytit_22.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='消化内科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					   <h3>
+                        <img src="/sc2016/images/mytit_24.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='感染性疾病科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					   <h3>
+                        <img src="/sc2016/images/mytit_29.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='中医科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					   <h3>
+                        <img src="/sc2016/images/mytit_30.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='儿科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					   <h3>
+                        <img src="/sc2016/images/mytit_31.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='重症医学科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					  <h3>
+                        <img src="/sc2016/images/mytit_59.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='康复科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+                    </div>
+                  </div>
+				  
+				  
+                  <div id="tab2" class="tab">
+                    <div class="content-block">
+                      <h3>
+                        <img src="/sc2016/images/mytit_38.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='普外科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					  <h3>
+                        <img src="/sc2016/images/mytit_40.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='泌尿外科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					  <h3>
+                        <img src="/sc2016/images/mytit_42.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='神经外科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					  <h3>
+                        <img src="/sc2016/images/mytit_47.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='脊柱外科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					  <h3>
+                        <img src="/sc2016/images/mytit_48.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='骨关节外科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					   <h3>
+                        <img src="/sc2016/images/mytit_49.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='眼耳鼻咽喉科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					   <h3>
+                        <img src="/sc2016/images/mytit_53.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='肛肠科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					  <h3>
+                        <img src="/sc2016/images/mytit_54.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='皮肤科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					  <h3>
+                        <img src="/sc2016/images/mytit_55.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='口腔科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					  <h3>
+                        <img src="/sc2016/images/mytit_60.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='手术麻醉科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					  <h3>
+                        <img src="/sc2016/images/mytit_61.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='产科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					  <h3>
+                        <img src="/sc2016/images/mytit_65.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='妇科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+                    </div>
+                  </div>
+                  <div id="tab3" class="tab">
+                    <div class="content-block">
+                      <h3>
+                        <img src="/sc2016/images/mytit_71.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='门诊部' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					  <h3>
+                        <img src="/sc2016/images/mytit_72.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='急诊部' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div id="tab4" class="tab">
+                    <div class="content-block">
+                       <h3>
+                        <img src="/sc2016/images/mytit_79.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='检验科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					   <h3>
+                        <img src="/sc2016/images/mytit_81.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='病理科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					   <h3>
+                        <img src="/sc2016/images/mytit_83.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='功能科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+					  
+					   <h3>
+                        <img src="/sc2016/images/mytit_88.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='超声影像科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div id="tab5" class="tab">
+                    <div class="content-block">
+                       <h3>
+                        <img src="/sc2016/images/mytit_95.png" alt="图片" class="my-h3">
+                      </h3>
+                      <ul class="my-ul clearfix">
+					  {dede:arclist titlelen=32  channelid='17'  keyword='体检科' row='999'}
+                        <li class="my-li">
+                          <a href="[field:arcurl/]" target="_blank" class="my-a"><img src="[field:litpic/]" alt="医生" class="my-img"></a>
+                          <p style="color:#51aea6">姓名:[field:title/]</p>
+                          <p>科室:[field:source/]</p>
+                          <p>职称:[field:shorttitle/]</p>
+                        </li>
+						{/dede:arclist}
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+        </div>
+     </div>
+    <!-- 侧边栏?-->
+      <div class="panel-overlay"></div>
+      <div class="panel panel-left panel-cover theme-dark" id='panel-js-demo'>
+        <div class="content-block">
+          <ul class="cebian">
+            <a a target="_blank" href="/">
+            <li class="cebian-li">网站首页</li>
+            </a>
+            {dede:channelartlist typeid='1,1'}
+
+            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+            <li class="cebian-li">医院概况<div class="cebian-sanjiao"></div></li>
+            </a>
+          {/dede:channelartlist}
+                {dede:channelartlist typeid='2,2'}
+
+            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+            <li class="cebian-li">新闻动态<div class="cebian-sanjiao"></div></li>
+            </a>
+            {/dede:channelartlist}
+                {dede:channelartlist typeid='4,4'}
+
+            <a target="_blank"  title="{dede:field name='typename'/}">
+            <li class="cebian-li">科室介绍<div class="cebian-sanjiao"></div></li>
+            </a>
+            {/dede:channelartlist}
+              {dede:channelartlist typeid='58,58'}
+
+            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+            <li class="cebian-li">网上服务<div class="cebian-sanjiao"></div></li>
+            </a>
+            {/dede:channelartlist}
+                {dede:channelartlist typeid='62,62'}
+
+            <a target="_blank" href="{dede:field name='typeurl'/}" title="名医荟萃">
+            <li class="cebian-li">名医荟萃<div class="cebian-sanjiao"></div></li>
+            </a>
+            {/dede:channelartlist}
+                    {dede:channelartlist typeid='51,51'}
+
+            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+            <li class="cebian-li">科研教学<div class="cebian-sanjiao"></div></li>
+            </a>
+            {/dede:channelartlist}
+                {dede:channelartlist typeid='75,75'}
+
+            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+            <li class="cebian-li">医院文化<div class="cebian-sanjiao"></div></li>
+            </a>
+            {/dede:channelartlist}
+                      {dede:channelartlist typeid='50,50'}
+
+            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+            <li class="cebian-li">护理园地<div class="cebian-sanjiao"></div></li>
+            </a>
+            {/dede:channelartlist}
+                      {dede:channelartlist typeid='327,327'}
+
+            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
+            <li class="cebian-li">健康小屋<div class="cebian-sanjiao"></div></li>
+            </a>
+             {/dede:channelartlist}
+          </ul>
+
+        </div>
+      </div>
+    <script type='text/javascript' src='/sc2016/js/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='/sc2016/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='/sc2016/js/sm-extend.min.js' charset='utf-8'></script>
+     <script>
+      $(document).on("click", ".my-btn", function() {
+      $.openPanel("#panel-js-demo");
+    });
+    </script>
+
+  </body>
+</html>
