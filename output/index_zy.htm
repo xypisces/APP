@@ -22,7 +22,7 @@
               <a href="javascript:history.back(-1);" class="view-head pull-left">
                 <img src="/sc2016/img/fanhui.png" alt="返回" class="head-img">
               </a>
-              <span class="head-span">内科系统</span>
+              <span class="head-span">中医科</span>
               <a href="#" class="my-btn pull-right view-head2"><img src="/sc2016/img/more.png" alt="导航" class="head-img2"></a>
             </header>
 
@@ -97,7 +97,7 @@
                        <a href="/m/zhongyike/jiankangbaojian" target="_blank">健康保健</a>
                       </li>
                       <li class="neike-li3">
-                        ><a href="/m/wangshangfuwudating" target="_blank">就医指南</a>
+                        <a href="/m/wangshangfuwudating" target="_blank">就医指南</a>
                       </li>
                     </ul>
 
@@ -106,11 +106,14 @@
                       <img src="[field:pic/]" alt="图片">
 					   {/dede:myppt}
                     </div>
-
+					
+					<div class="overflowdiv">
                     <h4 class="neike-h6">{dede:field name='typename'/}简介</h4>
                    <p class="neike-p"> <a href="/m/zhongyike/keshijianjie" class="neike-a">{dede:field.content/} </a>
                    </p>
+				   </div>
 				   
+				   <div class="clearfix">
                    <h4 class="neike-h6">{dede:field name='typename'/}医生</h4>
 				   {dede:arclist typeid='62' infolen='230' keyword='中医科'  row='3'}
                      <div class="pic-img clearfix">
@@ -120,7 +123,8 @@
                        <p>职称:[field:shorttitle/]</p>
                        <p class="pic-link"><a href="[field:arcurl/]" target="_blank" >医生简介</a></p>
                     </div>
-					{/dede:arclist} 
+					{/dede:arclist}
+					</div>
                     
 					
                    <h4 class="neike-h6">技术进展</h4> 
