@@ -1,0 +1,40 @@
+<div class="mysearch">
+    	<h4>专家介绍</h4>
+        <form id="form3" name="form3" method="post" action="">
+        <div class="sar clear">
+        	<div class="sar1">门诊查询</div>
+            <div class="sar2">
+              <label for="xitong">系统：</label>
+              <select name="xitong" id="xitong">
+              	<option>--请选择--</option>
+          {dede:channelartlist typeid='4,4'}
+          {dede:channel type='son' noself='yes' row='5'}
+                <option>[field:typename/]</option>
+          {/dede:channel}
+          {/dede:channelartlist}          
+              </select>
+            </div>
+            <div class="sar3">
+            <label for="xitong">科室：</label>
+            <select name="keshi" id="keshi">
+              	<option>--请选择--</option>
+                <option>体检科</option>
+                <option>--请选择--</option>
+              </select>
+            </div>
+            <div class="sar4">
+            <label for="xitong">专家：</label>
+            <select name="zhuanjia" id="zhuanjia">
+              	<option>--请选择--</option>
+                <option>--请选择--</option>
+                <option>--请选择--</option>
+              </select>
+            </div>
+            <div class="sar5">
+              <label for="mohu">模糊搜索：</label>
+              <input type="text" name="mohu" id="mohu" />
+            </div>
+            <div class="sar6"><input type="image" src="/du2015/images/btn_06.png" name="btn2" id="btn2" /></div>
+        </div>
+        </form>
+    </div>

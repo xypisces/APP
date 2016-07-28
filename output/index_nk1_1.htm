@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="/du2015/css/bodykq.css" rel="stylesheet" type="text/css" />
+<script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="contents"><a href=" {dede:global.cfg_indexurl/}" target="_self"><img src="/du2015/kq/keshi/{dede:field.typeid/}.png" alt="口腔" width="100%"   border="0" /></a></div>
+    <div class="headnav contents">
+    	<ul class="clear">
+        	<li class="sp"><a href="/nafenmike" target="_blank">科室首页</a></li>
+            <li class="sp2"><a href="/nafenmike/" target="_blank">科室简介</a></li>
+            <li class="sp2"><a href="/nafenmike/xinwendongtai" target="_blank">新闻动态</a></li>
+            <li class="sp2"><a href="/nafenmike/dianxingbingli" target="_blank">典型病例</a></li>
+            <li class="sp2"><a href="/nafenmike/jishufazhan" target="_blank">技术发展</a></li>
+            <li class="sp2"><a href="/nafenmike/keyanjiaoxue" target="_blank">科研教学</a></li>
+            <li class="sp2"><a href="/nafenmike/yiliaoshebei" target="_blank">医疗设备</a></li>
+            <li class="sp2"><a href="/shennake" target="_blank">肾内科</a></li>
+            <li class="sp2"><a href="/nafenmike" target="_blank">内分泌科</a></li>
+        </ul>
+    </div>
+    <!--nav end-->
+    <div class="bg contents">
+    	<div class="c_contents">
+        	<div class="bannerleft">
+            	<div class="pro-switch">
+		<div class="slider">
+			<div class="flexslider">
+				<ul class="slides">
+                   {dede:myppt typeid='6' row='5'}
+					<li><div class="img"><img src="[field:pic/]"   width="98%" alt="" /></div></li>
+				   {/dede:myppt}
+				</ul>
+			</div>
+		</div>
+	</div>
+    <script defer src="/du2015/js/slider.js"></script> 
+<script type="text/javascript">
+    $(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+            </div>
+            <div class="bannerright">
+            	<h3>{dede:field name='typename'/}简介</h3>
+                <p>{dede:field.content/}</p>
+            </div>
+        </div>
+        <!--banner end-->
+        <div class="c_contents" style="padding-bottom:30px;">
+        	<div class="ro1">
+            	<h3 class="rosame">热点新闻</h3>
+                <ul>
+                 {dede:arclist typeid='137' row='6' infolen='230' flag='h'}
+               	  <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+               {/dede:arclist}
+                </ul>
+                <div class="more"><a href="/nafenmike/xinwendongtai" target="_blank"><img src="/du2015/kq/more_17.png" width="85" height="27" alt="more" /></a></div>
+            </div>
+          <div class="ro2">
+           	  <h3 class="rosame">{dede:field name='typename'/}医生</h3>
+            <ul class="clear">
+              {dede:arclist limit='0,1' titlelen=32  channelid='17'  keyword='内科'}
+  <li><a href="[field:arcurl/]" target="_blank"><img src="[field:litpic/]" width="80%"  height="170vw"  alt="[field:title/]" /> </a>
+              <p style="color:#51aea6">姓名：[field:title/]</p>
+              <p>科室：[field:source/]</p>
+              <p>职称：[field:shorttitle/]</p>
+           	  </li>
+                {/dede:arclist}
+                
+                
+                 {dede:arclist limit='1,1' titlelen=32  channelid='17'  keyword='内科'}
+       <li><a href="[field:arcurl/]" target="_blank"><img src="[field:litpic/]" width="80%"  height="170vw"  alt="[field:title/]" /> </a>
+              <p style="color:#51aea6">姓名：[field:title/]</p>
+              <p>科室：[field:source/]</p>
+              <p>职称：[field:shorttitle/]</p>
+           	  </li>
+                
+                {/dede:arclist}
+              
+            
+       {dede:arclist limit='2,1' titlelen=32  channelid='17'  keyword='内科'}
+ <li><a href="[field:arcurl/]" target="_blank"><img src="[field:litpic/]" width="80%"  height="170vw"  alt="[field:title/]" /> </a>
+              <p style="color:#51aea6">姓名：[field:title/]</p>
+              <p>科室：[field:source/]</p>
+              <p>职称：[field:shorttitle/]</p>
+           	  </li>
+                
+                {/dede:arclist}
+            
+              
+              
+            </ul>
+            </div>
+        </div>
+        <!--ro1 end-->
+        <div class="c_contents">
+        	
+          <div class="ro3">
+            	<h3><a href="{dede:type typeid='0′ row=1}[field:typelink /]{/dede:type}xinwendongtai"><img src="/du2015/kq/tit_37.png" alt="dsa" width="100%" border="0" /></a>
+                  <map name="Map5" id="Map5">
+                    <area shape="rect" coords="301,7,387,36" href="/nafenmike/xinwendongtai" />
+                  </map>
+            	</h3>
+                <ul>
+                 {dede:arclist row='5' titlelen=32  typeid='137'}
+               	  <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                {/dede:arclist}
+                </ul>
+            </div>
+          <div class="ro3">
+           <h3><a href="{dede:type typeid='0′ row=1}[field:typelink /]{/dede:type}dianxingbingli"><img src="/du2015/kq/tit_37.png" alt="dsa" width="100%" border="0" /></a>
+                  <map name="Map6" id="Map6">
+                    <area shape="rect" coords="299,8,385,36" href="/nafenmike/dianxingbingli" />
+                  </map>
+            	</h3>
+                <ul>
+               	   {dede:arclist row='5' titlelen=32  typeid='141'}
+               	  <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                {/dede:arclist}
+                </ul>
+            </div>
+          <div class="ro3">
+            	<h3><a href="{dede:type typeid='0′ row=1}[field:typelink /]{/dede:type}jishufazhan"><img src="/du2015/kq/tit_42.png" alt="dsa" width="100%"  usemap="#Map7" border="0" /></a>
+                  <map name="Map7" id="Map7">
+                    <area shape="rect" coords="302,6,387,36" href="/nafenmike/jishufazhan" />
+                  </map>
+            	</h3>
+                <ul>
+               	         	   {dede:arclist row='5' titlelen=32  typeid='138'}
+               	  <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                {/dede:arclist}
+                </ul>
+            </div>
+          <div class="ro3">
+            	<h3><a href="{dede:type typeid='0′ row=1}[field:typelink /]{/dede:type}keyanjiaoxue"><img src="/du2015/kq/tit_43.png" alt="dsa" width="100%"  usemap="#Map8" border="0" /></a>
+                  <map name="Map8" id="Map8">
+                    <area shape="rect" coords="300,6,387,35" href="/nafenmike/keyanjiaoxue" />
+                  </map>
+            	</h3>
+                <ul>
+         	         	   {dede:arclist row='5' titlelen=32  typeid='139'}
+               	  <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                {/dede:arclist}
+                </ul>
+            </div>
+          <div class="ro3">
+            	<h3><a href="{dede:type typeid='0′ row=1}[field:typelink /]{/dede:type}yiliaoshebei"><img src="/du2015/kq/tit_44.png" alt="dsa" width="100%"  usemap="#Map9" border="0" /></a>
+                  <map name="Map9" id="Map9">
+                    <area shape="rect" coords="298,6,387,36" href="/nafenmike/yiliaoshebei" />
+                  </map>
+            	</h3>
+                <ul>
+         	         	   {dede:arclist row='5' titlelen=32  typeid='142'}
+               	  <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                {/dede:arclist}
+                </ul>
+            </div>
+          
+          
+        </div>
+        <!--ro3 end-->
+        <div class="c_contents">
+       	  <div class="ro4">
+           	<h3>图片文章</h3>
+              <ul class="clear">
+               {dede:arclist row='5' titlelen=32  typeid='137' type="image"}
+               	  <li><a href="[field:arcurl/]" target="_blank"><img src="[field:litpic/]" width="234" height="161" alt="[field:title/]" /></a></li>
+   {/dede:arclist}
+              </ul>
+            </div>
+        </div>
+        <!--ro4 end-->
+        
+        {dede:include filename="footer.htm"/} 
+<!-- /footer --> 
+    </div>
+</body>
+</html>

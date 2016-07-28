@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="/du2015/css/listkq.css" rel="stylesheet" type="text/css" />
+<script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+<script src="/du2015/js/tab.js"></script>
+</head>
+<body>
+<div class="contents"><a href=" {dede:global.cfg_indexurl/}" target="_self"><img src="/du2015/kq/keshi/{dede:field.typeid/}.png" alt="口腔" width="100%"   border="0" /></a></div>
+    <div class="headnav contents">
+    	<ul class="clear">
+
+
+
+        	<li class="sp"><a href="/shenjingnake/" target="_blank">科室首页</a></li>
+            <li class="sp2"><a href="/shenjingnake/keshijianjie" target="_blank">科室简介</a></li>
+            <li class="sp2"><a href="/shenjingnake/xinwendongtai" target="_blank">新闻动态</a></li>
+            <li class="sp2"><a href="/shenjingnake/dianxingbingli" target="_blank">典型病例</a></li>
+            <li class="sp2"><a href="/shenjingnake/jishufazhan" target="_blank">技术发展</a></li>
+            <li class="sp2"><a href="/shenjingnake/keyanjiaoxue" target="_blank">科研教学</a></li>
+            <li class="sp2"><a href="/shenjingnake/yiliaoshebei" target="_blank">医疗设备</a></li>
+            <li class="sp2"><a href="/shenjingnake/jiankangbaojian" target="_blank">健康保健</a></li>
+            <li class="sp2"><a href="/wangshangfuwudating" target="_blank">就医指南</a></li>
+        </ul>
+    </div>
+<!--nav end-->
+<div class="bg contents">
+  <div class="c_contents">
+    <div class="bannerleft">
+
+       <!--
+      <div class="bgcolor">
+        <div class="pro-switch">
+          <div class="slider">
+            <div class="flexslider">
+              <ul class="slides">
+             //   {dede:myppt typeid='3' row='5'}
+                <li>
+                  <div class="img"><img src="[field:pic/]"   width="98%" alt="" /></div>
+                </li>
+              //  {/dede:myppt}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <script defer src="/du2015/js/slider.js"></script> 
+        <script type="text/javascript">
+    $(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script> 
+      </div>
+
+
+        -->
+      <div class="listwz">
+        <div class="listposition">{dede:field.title/}</div>
+        <div class="listbg"> 
+          <div class="nr">
+             {dede:field.body/}
+            
+          </div>
+     </div>
+      </div>
+    </div>
+    <!--left end--> 
+        <div class="bannerright">
+  <h3><img src="/du2015/kq/listl_07.png" width="100%"   alt="dasda" /></h3>
+    {dede:include filename="left_ks.htm"/} 
+    <!-- /left_ks --> 
+  </div>
+  {dede:include filename="footer.htm"/} 
+  <!-- /footer --> 
+</div>
+</body>
+</html>

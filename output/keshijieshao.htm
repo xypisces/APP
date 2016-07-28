@@ -1,143 +1,246 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>科室介绍</title>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-    <link rel="stylesheet" href="css/sm.css">
-    <link rel="stylesheet" href="css/sm-extend.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
-  </head>
-  <body>
-     <div class="page-group">
-        <div class="page page-current">
-             <!-- 澶撮儴  -->
-            <header class="bar bar-nav">
-              <a href="javascript:history.back(-1);" class="view-head pull-left">
-                <img src="/sc2016/img/fanhui.png" alt="杩斿洖" class="head-img">
-              </a>
-              <span class="head-span">科室介绍</span>
-              <a href="#" class="my-btn pull-right view-head2"><img src="/sc2016/img/more.png" alt="导航" class="head-img2"></a>
-            </header>
-
-
-            <div class="content">
-              <ul class="view-ul">
-                <a href="/m/shenjingnake"><li class="view-li">
-                  <img src="/sc2016/img/neik.png" alt="鍐呯" class="view-img">
-                  <span class="li-span">内科系统</span>
-                  <p class="li-p">神经内科,心血管内科,呼吸内科,消化内科,内分泌内科,新生儿内科,重症医学科(ICU),感染性疾病科,中医科,康复医学科...</p>
-                </li></a>
-                <a href="#"><li class="view-li">
-                  <img src="/sc2016/img/waik.png" alt="鍐呯" class="view-img">
-                  <span class="li-span">外科系统</span>
-                  <p class="li-p">普外科,胸心外科,烧伤科,甲乳外科,泌尿外科,神经外科,脊柱外科,骨关节外科,手显微外科,产科,妇科,眼耳鼻咽喉科,肛肠科,皮肤科,口腔科,手术麻醉科...</p>
-                </li></a>
-                <a href="#"><li class="view-li">
-                  <img src="/sc2016/img/jizhenk.png" alt="鍐呯" class="view-img">
-                  <span class="li-span">门急诊</span>
-                  <p class="li-p">门诊部,急诊科</p>
-                </li></a>
-                <a href="#"><li class="view-li">
-                  <img src="/sc2016/img/yijik.png" alt="鍐呯" class="view-img">
-                  <span class="li-span">医技科室</span>
-                  <p class="li-p">检验科,超声影像科,放射科,功能科,心脑电,内窥镜,病理科</p>
-                </li></a>
-                <a href="#"><li class="view-li">
-                  <img src="/sc2016/img/tijiank.png" alt="鍐呯" class="view-img">
-                  <span class="li-span">体检科</span>
-                  <p class="li-p">体检科</p>
-                </li></a>
-                <a href="#"><li class="view-li">
-                  <img src="/sc2016/img/shek.png" alt="鍐呯" class="view-img">
-                  <span class="li-span">社康中心</span>
-                  <p class="li-p">社区健康服务中心</p>
-                </li></a>
-              </ul>
-            </div>
-
-        </div>
-     </div>
-    <!-- 渚ц竟鏍?-->
-      <div class="panel-overlay"></div>
-      <div class="panel panel-left panel-cover theme-dark" id='panel-js-demo'>
-        <div class="content-block">
-         <ul class="cebian">
-            <a a target="_blank" href="/">
-            <li class="cebian-li">网站首页</li>
-            </a>
-            {dede:channelartlist typeid='1,1'}
-
-            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
-            <li class="cebian-li">医院概况<div class="cebian-sanjiao"></div></li>
-            </a>
-          {/dede:channelartlist}
-                {dede:channelartlist typeid='2,2'}
-
-            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
-            <li class="cebian-li">新闻动态<div class="cebian-sanjiao"></div></li>
-            </a>
-            {/dede:channelartlist}
-                {dede:channelartlist typeid='4,4'}
-
-            <a target="_blank"  title="{dede:field name='typename'/}">
-            <li class="cebian-li">科室介绍<div class="cebian-sanjiao"></div></li>
-            </a>
-            {/dede:channelartlist}
-              {dede:channelartlist typeid='58,58'}
-
-            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
-            <li class="cebian-li">网上服务<div class="cebian-sanjiao"></div></li>
-            </a>
-            {/dede:channelartlist}
-                {dede:channelartlist typeid='62,62'}
-
-            <a target="_blank" href="{dede:field name='typeurl'/}" title="名医荟萃">
-            <li class="cebian-li">名医荟萃<div class="cebian-sanjiao"></div></li>
-            </a>
-            {/dede:channelartlist}
-                    {dede:channelartlist typeid='51,51'}
-
-            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
-            <li class="cebian-li">科研教学<div class="cebian-sanjiao"></div></li>
-            </a>
-            {/dede:channelartlist}
-                {dede:channelartlist typeid='75,75'}
-
-            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
-            <li class="cebian-li">医院文化<div class="cebian-sanjiao"></div></li>
-            </a>
-            {/dede:channelartlist}
-                      {dede:channelartlist typeid='50,50'}
-
-            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
-            <li class="cebian-li">护理园地<div class="cebian-sanjiao"></div></li>
-            </a>
-            {/dede:channelartlist}
-                      {dede:channelartlist typeid='327,327'}
-
-            <a target="_blank" href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
-            <li class="cebian-li">健康小屋<div class="cebian-sanjiao"></div></li>
-            </a>
-             {/dede:channelartlist}
-          </ul>
-
-        </div>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="/du2015/css/index.css" rel="stylesheet" type="text/css" />
+<link href="/du2015/css/ny.css" rel="stylesheet" type="text/css" />
+<script src="/du2015/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/du2015/js/banner.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/} 
+<!-- /header --> 
+<!--top end-->
+<div class="nybanner contents"><img src="/du2015/images/nybanner_03.png" width="1320" height="250"/></div>
+<div class="position contents">您当前的位置：{dede:field name='position'/}</div>
+<div class="contents" style="padding-bottom:20px;">
+  <div class="ny_left">
+    <div class="nyro1">
+      <h3>栏目导航</h3>
+      <div class="nyro1bg">
+        <ul>
+          {dede:channel type='son' row='5'}
+          <li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+          {/dede:channel}
+        </ul>
       </div>
-    <script type='text/javascript' src='js/zepto.min.js' charset='utf-8'></script>
-    <script type='text/javascript' src='js/sm.min.js' charset='utf-8'></script>
-    <script type='text/javascript' src='js/sm-extend.min.js' charset='utf-8'></script>
-     <script>
-      $(document).on("click", ".my-btn", function() {
-      $.openPanel("#panel-js-demo");
-    });
-    </script>
+    </div>
+    <!--nyro1 end-->
+    <div class="nyro2">
+      <div class="nyro2tit">
+        <ul class="clear" id="nav_5">
+          <li class="hover" id="xw" onmousemove="tab5(0)">新闻</li>
+          <li id="tz" onmousemove="tab5(1)">通知</li>
+          <li id="zt" onmousemove="tab5(2)">专题</li>
+        </ul>
+      </div>
+      <div class="nyro2text">
+        <ul>
+          {dede:arclist row=7 typeid='2' orderby=click}
+          <li><a href="[field:arcurl/]">[field:title/]</a></li>
+          {/dede:arclist}
+        </ul>
+      </div>
+      <div class="nyro2text" style="display:none">
+        <ul>
+          {dede:arclist row=7 typeid='65' orderby=click}
+          <li><a href="[field:arcurl/]">[field:title/]</a></li>
+          {/dede:arclist}
+        </ul>
+      </div>
+      <div class="nyro2text" style="display:none">
+        <ul>
+          {dede:arclist row=7 typeid='47' orderby=click}
+          <li><a href="[field:arcurl/]">[field:title/]</a></li>
+          {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="ny_right">
+    <div class="jkxwtit">科室介绍</div>
+    <div class="ksjsbg clear">
+      <div class="ksleft">
+        <ul>
+          {dede:arclist row=7 typeid='4' orderby=click}
+          <li><a href="[field:arcurl/]">[field:title/]</a></li>
+          {/dede:arclist}
+        </ul>
+      </div>
+      <div class="ksright">
+        <div class="column1_left">
+          <div class="container" id="idTransformView2">
+            <ul class="slider slider2" id="idSlider2">
+              {dede:arclist row=6 typeid='4' orderby=click  flag='f'}
+              <li><a href="[field:arcurl/]"><img src="[field:litpic/]"/></a>
+                <div class="idSiideer_pos">[field:title/]</div>
+                <div class="idSiideer_pos2"></div>
+              </li>
+              {/dede:arclist}
+            </ul>
+            <ul class="num" id="idNum2">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <script type="text/javascript" src="/du2015/js/ny.js"></script> 
+      </div>
+    </div>
+    {dede:arclist row=1 titlelen=32 flag='h'}
+    <li><a href="[field:arcurl/]">[field:title/]</a></li>
+    {/dede:arclist}
+    
+    
+    {dede:channelartlist typeid='5,5'}
+    <div class="kesame">
+      <h3>{dede:field name='typename'/}<span><a href="{dede:field name='typeurl'/}" target="_blank">MORE+</a></span></h3>
+      <div class="ksbgsame"> {dede:arclist row=1 titlelen=32 flag='h'}
+        <div class="kstext">
+          <div class="kstit">[field:title/]</div>
+          <div class="clear">
+            <div class="ksjsleft"><img src="[field:litpic/]" width="67" height="61" alt="[field:title/]" /></div>
+            <div class="ksjsright">
+              <p>[field:description/]</p>
+            </div>
+          </div>
+        </div>
+        {/dede:arclist}
+        <div class="kstdtit">最新动态</div>
+        <ul>
+          {dede:arclist row=3 titlelen=32  noflag='h'}
+          <li><a href="[field:arcurl/]">[field:title/]</a></li>
+          {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+    <!--kesame end--> 
+    
+    {/dede:channelartlist} 
+    
 
-  </body>
+    {dede:channelartlist typeid='6,6'}
+    <div class="kesame">
+      <h3>{dede:field name='typename'/}<span><a href="{dede:field name='typeurl'/}" target="_blank">MORE+</a></span></h3>
+      <div class="ksbgsame"> {dede:arclist row=1 titlelen=32 flag='h'}
+        <div class="kstext">
+          <div class="kstit">[field:title/]</div>
+          <div class="clear">
+            <div class="ksjsleft"><img src="[field:litpic/]" width="67" height="61" alt="[field:title/]" /></div>
+            <div class="ksjsright">
+              <p>[field:description/]</p>
+            </div>
+          </div>
+        </div>
+        {/dede:arclist}
+        <div class="kstdtit">最新动态</div>
+        <ul>
+          {dede:arclist row=3 titlelen=32  noflag='h'}
+          <li><a href="[field:arcurl/]">[field:title/]</a></li>
+          {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+    <!--kesame end--> 
+    
+    {/dede:channelartlist} 
+    
+
+    {dede:channelartlist typeid='7,7'}
+    <div class="kesame">
+      <h3>{dede:field name='typename'/}<span><a href="{dede:field name='typeurl'/}" target="_blank">MORE+</a></span></h3>
+      <div class="ksbgsame"> {dede:arclist row=1 titlelen=32 flag='h'}
+        <div class="kstext">
+          <div class="kstit">[field:title/]</div>
+          <div class="clear">
+            <div class="ksjsleft"><img src="[field:litpic/]" width="67" height="61" alt="[field:title/]" /></div>
+            <div class="ksjsright">
+              <p>[field:description/]</p>
+            </div>
+          </div>
+        </div>
+        {/dede:arclist}
+        <div class="kstdtit">最新动态</div>
+        <ul>
+          {dede:arclist row=3 titlelen=32  noflag='h'}
+          <li><a href="[field:arcurl/]">[field:title/]</a></li>
+          {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+    <!--kesame end--> 
+    
+    {/dede:channelartlist} 
+    
+
+    {dede:channelartlist typeid='8,8'}
+    <div class="kesame">
+      <h3>{dede:field name='typename'/}<span><a href="{dede:field name='typeurl'/}" target="_blank">MORE+</a></span></h3>
+      <div class="ksbgsame"> {dede:arclist row=1 titlelen=32 flag='h'}
+        <div class="kstext">
+          <div class="kstit">[field:title/]</div>
+          <div class="clear">
+            <div class="ksjsleft"><img src="[field:litpic/]" width="67" height="61" alt="[field:title/]" /></div>
+            <div class="ksjsright">
+              <p>[field:description/]</p>
+            </div>
+          </div>
+        </div>
+        {/dede:arclist}
+        <div class="kstdtit">最新动态</div>
+        <ul>
+          {dede:arclist row=3 titlelen=32  noflag='h'}
+          <li><a href="[field:arcurl/]">[field:title/]</a></li>
+          {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+    <!--kesame end--> 
+    
+    {/dede:channelartlist} 
+    
+
+    {dede:channelartlist typeid='10,10'}
+    <div class="kesame">
+      <h3>{dede:field name='typename'/}<span><a href="{dede:field name='typeurl'/}" target="_blank">MORE+</a></span></h3>
+      <div class="ksbgsame"> {dede:arclist row=1 titlelen=32 flag='h'}
+        <div class="kstext">
+          <div class="kstit">[field:title/]</div>
+          <div class="clear">
+            <div class="ksjsleft"><img src="[field:litpic/]" width="67" height="61" alt="[field:title/]" /></div>
+            <div class="ksjsright">
+              <p>[field:description/]</p>
+            </div>
+          </div>
+        </div>
+        {/dede:arclist}
+        <div class="kstdtit">最新动态</div>
+        <ul>
+          {dede:arclist row=3 titlelen=32  noflag='h'}
+          <li><a href="[field:arcurl/]">[field:title/]</a></li>
+          {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+    <!--kesame end--> 
+    
+    {/dede:channelartlist} 
+    
+
+
+
+
+    </div>
+</div>
+<!--ny end--> 
+{dede:include filename="foot.htm"/} 
+<!-- /foot -->
+</body>
 </html>

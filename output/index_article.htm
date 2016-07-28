@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta content="telephone=no" name="format-detection">
+<script type="text/javascript" language="javascript" src="/m/skin/js/jq.js"></script>
+<script type="text/javascript" language="javascript" src="/m/skin/js/js.js"></script>
+<!--[if lt IE 9]><script src="/m/skin/js/html5.js"></script><![endif]-->
+<link href="/m/skin/css/css.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+{dede:include filename="header_m.htm"/}
+<div class="mainboxbg"></div>
+<div class="mainbox"> 
+  <!--header-->
+  <div id="header" class="clearfix" style="position:relative;">
+    <div class="back"><a title="返回" href="javascript:history.back();"><img src="/m/skin/images/back.jpg" alt="分类"></a></div>
+    <div class="cpaut">{dede:field name='typename'/}</div>
+    <div class="flbox"><img src="/m/skin/images/fl.jpg" alt="分类"></div>
+  </div>
+  <div class="banner_top"></div>
+  <div id="slideBox" class="slideBox">
+    <div class="hd">
+      <ul>
+      </ul>
+    </div>
+  </div>
+  <!-- banner END -->
+  <div class="clearfix">
+    <div class="xingxi"> {dede:field.content/} </div>
+  </div>
+  <!-- main END --> 
+  <!--footer--> 
+  
+  {dede:include filename="footer_m.htm"/} </div>
+<!-- mainbox END -->
+</body>
+</html>

@@ -1,0 +1,43 @@
+<div id="footer" class="clearfix">
+  <div class="copy">
+    <p>服务热线：{dede:global.cfg_tel/}</p>
+    <p>{dede:global.cfg_powerby/}</p>
+    <p>技术支持：<a href="http://www.41ty.com/" target="_blank">41天鹰模板网</a></p>
+  </div>
+</div>
+<ul class="foc clearfix">
+  <li class="sms"> <span><a href="tel:0898-66888989">电话咨询</a></span> </li>
+  <li class="chat"> <span ><a href="sms:13976785542">发送短信</a></span> </li>
+  {dede:type typeid='22'}
+  <li class="contact" onClick="location.href='list.php?tid=[field:id/]'"
+> <span>[field:typename/]</span> </li>
+  {/dede:type}
+</ul>
+</div>
+<script>
+$(document).ready(function(){
+function wSize(){
+	var heights = $(window).height(); 
+	var heighttop=$(".foc").height();
+	var focHeights = $("#header").height();
+	var mainboxheight=heights - heighttop - focHeights ;
+	//var widths = $(window).width();
+	//var left = heights ;//heights - ($("#header").height()+71);
+	//$(".mianbox").height(left);
+	$("#footer").css('marginBottom', heighttop);	
+	//$(".cont").css('minHeight', mainboxheight);	
+	
+	
+}
+wSize();
+/*
+if($(window).height() > 810){
+	var heights = $(window).height(); 
+	var mgtp = (heights - 810)/2;
+	$(".mianbox").height(810);	
+	$(".mianbox").css('marginTop', mgtp);	
+	};
+*/
+
+})
+</script>

@@ -1,0 +1,31 @@
+  <div class="lmnav">
+    <ul>
+      {dede:channel type='son'}
+      <li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+      {/dede:channel}
+    </ul>
+  </div>
+  <div class="hot">
+    <div class="hottit">
+      <ul class="clear" id="nav_6">
+        <li id="new" onmousemove="tab6(0)">最新文章</li>
+        <!-- <li id="hot" onmousemove="tab6(1)">最热文章</li> -->
+      </ul>
+    </div>
+    <div class="hotbg" id="newtext" style="display:block">
+      <ul>
+        {dede:arclist row=12}
+        <li><a href="[field:arcurl/]">[field:title/]</a></li>
+        {/dede:arclist}
+      </ul>
+    </div>
+    <div class="hotbg" id="hottext" style="display:none">
+      <ul>
+        {dede:arclist row=12 orderby=click}
+        <li><a href="[field:arcurl/]">[field:title/]</a></li>
+        {/dede:arclist}
+      </ul>
+    </div>
+  </div>
+  <!--hot end--> 
+</div>
