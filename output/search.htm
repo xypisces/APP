@@ -1,42 +1,73 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>搜索页_{dede:global.cfg_webname/}</title>
-<meta name="keywords" content="{dede:field name='keywords'/}" />
-<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
-<link href="/du2015/css/index.css" rel="stylesheet" type="text/css" />
-<link href="/du2015/css/ny.css" rel="stylesheet" type="text/css" />
-<script src="/du2015/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="/du2015/js/banner.js"></script>
-</head>
-<body>
-{dede:include filename="head.htm"/} 
-<!-- /header --> 
-<!--top end-->
-<div class="nybanner contents"><img src="/du2015/images/nybanner_03.png" width="1320" height="250"/></div>
-<div class="position contents">您当前的位置：{dede:global name='keyword' function='RemoveXSS(@me)'/}的搜索页</div>
-<div class="contents" style="padding-bottom:20px;"> {dede:include filename="left.htm"/} 
-  <!-- /left -->
-  <div class="ny_right">
-    <div class="nyrtit">{dede:global name='keyword' function='RemoveXSS(@me)'/}</div>
-    {dede:list perpage='20'}
-    <div class="hlyd">
-      <h3>[field:title/]</h3>
-      <p>[field:description/]</p>
-      <p style="text-align:right;padding-top:5px;"><a href="[field:arcurl/]" target="_blank">[详情]</a></p>
-    </div>
-      {/dede:list}
-    <!--hlyd end-->
-    <div class="page">
-      <ul class="clear">
-    {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
-      </ul>
-    </div>
-  </div>
-</div>
-<!--ny end--> 
-{dede:include filename="foot.htm"/} 
-<!-- /foot -->
-</body>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>搜索页_{dede:global.cfg_webname/}</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="/sc2016/css/sm.css">
+    <link rel="stylesheet" href="/sc2016/css/sm-extend.min.css">
+    <link rel="stylesheet" href="/sc2016/css/style.css">
+
+  </head>
+  <body>
+     <div class="page-group">
+        <div class="page page-current">
+             <!-- 头部  -->
+            <header class="bar bar-nav">
+              <a href="javascript:history.back(-1);" class="view-head pull-left">
+                <img src="/sc2016/img/fanhui.png" alt="返回" class="head-img">
+              </a>
+              <span class="head-span">搜索页</span>
+              <a href="#" class="my-btn pull-right view-head2"><img src="/sc2016/img/more.png" alt="导航" class="head-img2"></a>
+            </header>
+
+
+                <div class="content">
+                   <!--  <ul class="neike-ul clearfix">
+						{dede:channel type='son' row='999'}					
+                        <li class="neike-li22">
+                        <a href='[field:typeurl/]'>[field:typename/]</a>
+                        </li>
+						{/dede:channel}
+                    </ul> -->
+
+                    <div class="neike-img22">
+                      <img src="/sc2016/kq/keshi/2.png" alt="图片">
+                    </div>
+					
+					
+					 <h4 class="article-h4">{dede:global name='keyword' function='RemoveXSS(@me)'/}</h4>
+					{dede:list pagesize='20'}
+                    <ul class="acticle-ul">
+                      <li class="acticle-li1">[field:title/]</li>
+                      <li class="acticle-li2">[field:description/]</li>
+                      <li class="acticle-li3"><a href="[field:arcurl/]" target="_blank">查看详情</a></li>
+                    </ul>
+					{/dede:list}
+					<ul class="acticle-ul2">
+                      {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+                    </ul>
+					
+              </div>
+            </div>
+
+        </div>
+     </div>
+    <!-- 侧边栏?-->
+    {dede:include filename="footer.htm"/}
+    <script type='text/javascript' src='/sc2016/js/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='/sc2016/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='/sc2016/js/sm-extend.min.js' charset='utf-8'></script>
+     <script>
+      $(document).on("click", ".my-btn", function() {
+      $.openPanel("#panel-js-demo");
+    });
+    </script>
+
+  </body>
 </html>
