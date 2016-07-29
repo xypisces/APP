@@ -75,7 +75,7 @@
 				</a>
 			</div>
 			<div class="index-icon">
-				<a href="/m" target="_blank">
+				<a href="/m/yiyuanyuanxun" target="_blank">
 				<img src="/sc2016/img/liucheng.png" alt="流程">
 				</a>
 			</div>
@@ -133,11 +133,10 @@
 				<p class="person-title">	
 					<span><img src="/sc2016/img/fengcai.png" alt="专家" class="person-img">专家风采</span>
 				</p>
-				<div class="person-lunbo clearfix" id="ISL_Cont">
-						<div class="lunbo-wd">
-							<div id="List1">
-							{dede:arclist typeid='62' row='26' infolen='230'  isweight='y' orderby='weight'}
-								<div class="pic">
+				<div class="person-lunbo clearfix swiper-container" id="ISL_Cont">
+						<div class="lunbo-wd swiper-wrapper">
+							{dede:arclist typeid='62' row='30' infolen='230'  isweight='y' orderby='weight'}
+								<div class="pic swiper-slide">
 									<a href="[field:arcurl/]">
 										<img src="[field:litpic/]" alt="医生">
 									</a>
@@ -146,14 +145,10 @@
 									<p>职称:[field:shorttitle/]</p>
 								</div>
 								{/dede:arclist}
-							</div>
-
-							<div id="List2"></div>
-
 						</div>
 				</div>
 			</div>
-			 <script type="text/javascript" src="/sc2016/js/gd.js"></script>
+			<!--  <script type="text/javascript" src="/sc2016/js/gd.js"></script -->
 
 			<!-- link -->
 			<div class="index-link">
@@ -255,6 +250,18 @@
     	$(document).on("click", ".my-btn", function() {
 		  $.openPanel("#panel-js-demo");
 		});
+    </script>
+	<script>
+	$(function() {
+		  $(".swiper-container").swiper({
+				scrollbarHide: true,
+				slidesPerView: 'auto',
+				paginationClickable: true,				
+				autoplay: 2000,
+				autoplayDisableOnInteraction: false,
+				grabCursor: true
+			});
+		});   
     </script>
   </body>
 </html>

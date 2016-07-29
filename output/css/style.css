@@ -151,17 +151,16 @@
 .lunbo-wd{
 	width: 1000px;
 }
-#List1{
-	overflow: hidden;
-}
 .pic{
 	float: left;
-	width: 5rem;
+	width: 5rem !important;
 	margin-left:1%;
 	height: 10rem;
 }
 .pic img{
-	width: 100%;
+	width: 100px !important;
+	height:135px !important;
+	display:inline-block;
 }
 .pic p{
 	margin: 0;
