@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="/du2015/css/index.css" rel="stylesheet" type="text/css" />
+<link href="/du2015/css/ny.css" rel="stylesheet" type="text/css" />
+<script src="/du2015/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/du2015/js/banner.js"></script>
+</head>
+
+<body>
+{dede:include filename="head.htm"/} 
+<!-- /header --> 
+<!--top end-->
+
+<div class="nybanner contents"><img src="/du2015/images/nybanner_03.png" width="1320" height="250"/></div>
+<div class="position contents">您当前的位置：{dede:field name='position'/}</div>
+<div class="contents" style="padding-bottom:20px;"> {dede:include filename="left.htm"/} 
+  <!-- /left -->
+  <div class="ny_right">
+    <div class="lgjstit"> {dede:field name='seotitle'/} </div>
+    <div class="jstext"> {dede:field.content/} </div>
+    <!--hlyd end--> 
+    
+  </div>
+</div>
+<!--ny end--> 
+
+{dede:include filename="foot.htm"/} 
+<!-- /foot -->
+</body>
+</html>

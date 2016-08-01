@@ -19,7 +19,7 @@
         <div class="page page-current">
              <!-- 头部  -->
             <header class="bar bar-nav">
-              <a href="javascript:history.back(-1);" class="view-head pull-left">
+              <a href="/keshijieshao/index.html" class="view-head pull-left">
                 <img src="/sc2016/img/fanhui.png" alt="返回" class="head-img">
               </a>
               <span class="head-span">儿科</span>
@@ -47,10 +47,10 @@
                         <li class="neike-li">
                         <a href="/m/xiaohuanake">肾内科</a>
                         </li>
-                         <li class="neike-li neike-active">
+                         <li class="neike-li">
                         <a href="/m/erke">儿科</a>
                         </li>
-                         <li class="neike-li neike-active">
+                         <li class="neike-li">
                         <a href="/m/erke">新生儿科</a>
                         </li>
                         <li class="neike-li ">
@@ -70,34 +70,34 @@
 
                     <ul class="neike-ul2 clearfix">
                       <li class="neike-li2">
-                        <a href="/m/erke" target="_blank">科室首页</a>
+                        <a href="/m/erke" >科室首页</a>
                       </li>
                       <li class="neike-li2">
-                        <a href="/m/erke/keshijianjie" target="_blank">科室简介</a>
+                        <a href="/m/erke/keshijianjie" >科室简介</a>
                       </li>
                       <li class="neike-li2">
-                       <a href="/m/erke/xinwendongtai" target="_blank">新闻动态</a>
+                       <a href="/m/erke/xinwendongtai" >新闻动态</a>
                       </li>
                       <li class="neike-li2">
-                        <a href="/m/erke/dianxingbingli" target="_blank">典型病例</a>
+                        <a href="/m/erke/dianxingbingli" >典型病例</a>
                       </li>
                       <li class="neike-li2">
-                        <a href="/m/erke/jishufazhan" target="_blank">技术发展</a>
+                        <a href="/m/erke/jishufazhan" >技术发展</a>
                       </li>
                     </ul>
 
                     <ul class="neike-ul3 clearfix">
                       <li class="neike-li3">
-                        <a href="/m/erke/keyanjiaoxue" target="_blank">科研教学</a>
+                        <a href="/m/erke/keyanjiaoxue" >科研教学</a>
                       </li>
                       <li class="neike-li3">
-                        <a href="/m/erke/yiliaoshebei" target="_blank">医疗设备</a>
+                        <a href="/m/erke/yiliaoshebei" >医疗设备</a>
                       </li>
                       <li class="neike-li3">
-                       <a href="/m/erke/jiankangbaojian" target="_blank">健康保健</a>
+                       <a href="/m/erke/jiankangbaojian" >健康保健</a>
                       </li>
                       <li class="neike-li3">
-                        <a href="/m/wangshangfuwudating" target="_blank">就医指南</a>
+                        <a href="/m/wangshangfuwudating" >就医指南</a>
                       </li>
                     </ul>
 
@@ -121,7 +121,7 @@
                        <p style="color:#51aea6">姓名:[field:title/]</p>
                        <p>科室:[field:source/]</p>
                        <p>职称:[field:shorttitle/]</p>
-                       <p class="pic-link"><a href="[field:arcurl/]" target="_blank" >医生简介</a></p>
+                       <p class="pic-link"><a href="[field:arcurl/]"  >医生简介</a></p>
                     </div>
 					{/dede:arclist} 
 					</div>
@@ -132,7 +132,7 @@
                   <div class="index-msg">
                     <ul class="msg-ul">
 					{dede:arclist typeid='67' row='7' titlelen='50'}
-                      <a href="[field:arcurl/]" target="_blank"><li class="msg-li">[field:title/]</li></a>
+                      <a href="[field:arcurl/]" ><li class="msg-li">[field:title/]</li></a>
                       {/dede:arclist}
                     </ul>
                   </div>
@@ -143,14 +143,7 @@
      </div>
     <!-- 侧边栏?-->
       {dede:include filename="footer.htm"/} 
-    <script type='text/javascript' src='/sc2016/js/zepto.min.js' charset='utf-8'></script>
-    <script type='text/javascript' src='/sc2016/js/sm.min.js' charset='utf-8'></script>
-    <script type='text/javascript' src='/sc2016/js/sm-extend.min.js' charset='utf-8'></script>
-     <script>
-      $(document).on("click", ".my-btn", function() {
-      $.openPanel("#panel-js-demo");
-    });
-    </script>
+    
 
   </body>
 </html>
