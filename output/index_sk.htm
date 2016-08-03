@@ -104,49 +104,7 @@
         </div>
      </div>
     <!-- 侧边栏?-->
-      <div class="panel-overlay"></div>
-      <div class="panel panel-left panel-cover theme-dark" id='panel-js-demo'>
-        <div class="content-block">
-          <ul class="cebian">
-            <a a  href="/m">
-            <li class="cebian-li">网站首页</li>
-            </a>
-            {dede:channelartlist typeid='1,1'}
-
-            <a  href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
-            <li class="cebian-li">医院概况<div class="cebian-sanjiao"></div></li>
-            </a>
-          {/dede:channelartlist}
-                {dede:channelartlist typeid='2,2'}
-
-            <a  href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
-            <li class="cebian-li">新闻动态<div class="cebian-sanjiao"></div></li>
-            </a>
-            {/dede:channelartlist}
-                {dede:channelartlist typeid='4,4'}
-
-            <a   title="{dede:field name='typename'/}">
-            <li class="cebian-li">科室介绍<div class="cebian-sanjiao"></div></li>
-            </a>
-            {/dede:channelartlist}
-              {dede:channelartlist typeid='58,58'}
-
-            <a  href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
-            <li class="cebian-li">网上服务<div class="cebian-sanjiao"></div></li>
-            </a>
-            {/dede:channelartlist}
-                {dede:channelartlist typeid='62,62'}
-
-            <a  href="{dede:field name='typeurl'/}" title="名医荟萃">
-            <li class="cebian-li">名医荟萃<div class="cebian-sanjiao"></div></li>
-            </a>
-            {/dede:channelartlist}
-                    {dede:channelartlist typeid='51,51'}
-
-            <a  href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">
-            <li class="cebian-li">科研教学<div class="cebian-sanjiao"></div></li>
-            </a>
-            {/dede:chan
+      {dede:include filename="footer.htm"/} 
      
 
   </body>

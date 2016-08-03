@@ -19,7 +19,7 @@
 			    	{/dede:channelartlist}
         				{dede:channelartlist typeid='4,4'}
 
-			    	<a   href="/keshijieshao/index.html" class="close-panel" title="{dede:field name='typename'/}">
+			    	<a href="/keshijieshao/index.html" class="close-panel" title="{dede:field name='typename'/}">
 			    	<li class="cebian-li">ø∆ “ΩÈ…‹<div class="cebian-sanjiao"></div></li>
 			    	</a>
 			    	{/dede:channelartlist}
@@ -71,4 +71,13 @@
       $(document).on("click", ".my-btn", function() {
       $.openPanel("#panel-js-demo");
     });
-    </script>			
+    </script>
+	<script>
+    $('.neike-ul li').each(function(i){
+                    $('.neike-ul li').eq(i).click(function(){
+                        var href = $(this).children().eq(0).attr("href");
+                        window.location.href = href+'?index='+i;
+                        return false;
+                    });
+                });
+    </script>	

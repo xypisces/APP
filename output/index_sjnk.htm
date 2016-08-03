@@ -29,7 +29,7 @@
 
                 <div class="content">
                     <ul class="neike-ul clearfix">                      
-                        <li class="neike-li neike-active">
+                        <li class="neike-li">
                         <a href="/m/shenjingnake">神经内科</a>
                         </li>
                         <li class="neike-li">
@@ -141,9 +141,17 @@
 
         </div>
      </div>
+	 <script>
+    $('.neike-ul li').each(function(i){
+                    $('.neike-ul li').eq(i).click(function(){
+                        var href = $(this).children().eq(0).attr("href");
+                        window.location.href = href+'?index='+i;
+                        return false;
+                    });
+                });
+    </script>
     <!-- 侧边栏?-->
       {dede:include filename="footer.htm"/} 
-    
 
   </body>
 </html>

@@ -140,9 +140,18 @@
 
         </div>
      </div>
+	 <script>
+    $('.neike-ul li').each(function(i){
+                    $('.neike-ul li').eq(i).click(function(){
+                        var href = $(this).children().eq(0).attr("href");
+                        window.location.href = href+'?index='+i;
+                        return false;
+                    });
+                });
+    </script>
     <!-- ²à±ßÀ¸?-->
       {dede:include filename="footer.htm"/} 
-    
+	  
 
   </body>
 </html>
