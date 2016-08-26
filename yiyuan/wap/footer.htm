@@ -1,0 +1,191 @@
+<div class="panel-overlay"></div>
+			<div class="panel panel-left panel-cover theme-dark" id='panel-js-demo'>
+			  <div class="content-block">
+			    <ul class="cebian">
+			    	<a a  href="/m" class="close-panel" title="网站首页">
+			    	<li class="cebian-li">网站首页</li>
+			    	</a>
+			    	
+
+			    	<a  href="#" class="double-li" title="医院概况">
+			    	<li class="cebian-li">医院概况<div class="cebian-sanjiao"></div></li>
+			    	</a>
+				
+        				
+				<ul class="ul-two">
+			    		<a href="/m/zuzhijiagou?index=0" class="close-panel"><li>组织架构</li></a>
+			    		<a href="/m/lingdaotuandui?index=1" class="close-panel"><li>领导团队</li></a>
+			    		<a href="/m/lishihuimou?index=2" class="close-panel"><li>历史回眸</li></a>
+			    		<a href="/m/zhongdianxueke?index=3" class="close-panel"><li>重点学科</li></a>
+			    	</ul>
+			    	<a  href="#" class="double-li2" title="新闻动态">
+			    	<li class="cebian-li">新闻动态<div class="cebian-sanjiao"></div></li>
+			    	</a>
+			    	
+        				
+				<ul class="ul-two2">
+			    		<a href="/m/yuannadongtai?index=0" class="close-panel"><li>院内动态</li></a>
+			    		<a href="/m/baiyitianshi?index=1" class="close-panel"><li>白衣天使</li></a>
+			    		<a href="/m/wenhuahuicui?index=2" class="close-panel"><li>文化荟萃</li></a>
+			    		<a href="/m/jishujinzhan?index=3" class="close-panel"><li>技术进展</li></a>
+			    	</ul>
+			    	<a href="/keshijieshao/index.html" class="close-panel" title="科室介绍">
+			    	<li class="cebian-li">科室介绍<div class="cebian-sanjiao"></div></li>
+			    	</a>
+			   
+			    		
+
+			    	<a  href="#" class="double-li3" title="网上服务">
+			    	<li class="cebian-li">网上服务<div class="cebian-sanjiao"></div></li>
+			    	</a>
+			    	
+        				
+				<ul class="ul-two3">
+			    		<a href="/m/menzhenliucheng?index=0" class="close-panel"><li>门诊流程</li></a>
+			    		<a href="/m/ruyuanxuzhi?index=1" class="close-panel"><li>入院查询</li></a>
+			    		<a href="/m/zaixianzixun?index=2" class="close-panel"><li>在线咨询</li></a>
+			    		<a href="/m/yiyuanditu?index=3" class="close-panel"><li>医院地图</li></a>
+			    	</ul>
+					
+				{dede:channelartlist typeid='62,62'}	
+			    	<a  href="{dede:field name='typeurl'/}" class="close-panel" title="名医荟萃">
+			    	<li class="cebian-li">名医荟萃<div class="cebian-sanjiao"></div></li>
+			    	</a>
+			    	{/dede:channelartlist}
+               			
+
+			    	<a  href="/m/keyanjiaoxue?index=6" class="close-panel" title="科研教学">
+			    	<li class="cebian-li">科研教学<div class="cebian-sanjiao"></div></li>
+			    	</a>
+			    	
+
+			    	<a  href="#" class="double-li4" title="医院文化">
+			    	<li class="cebian-li">医院文化<div class="cebian-sanjiao"></div></li>
+			    	</a>
+				<ul class="ul-two4">
+			    		<a href="/m/xiangmujieshao?index=0" class="close-panel"><li>项目介绍</li></a>
+			    		<a href="/m/yiyuanhuanjing?index=1" class="close-panel"><li>医院环境</li></a>
+			    		<a href="/m/yiyuanrongyu?index=2" class="close-panel"><li>医院荣誉</li></a>
+			    		<a href="/m/jiaotongzhinan?index=3" class="close-panel"><li>交通指南</li></a>
+			    	</ul>
+			    	<a  href="/m/huliyuandi?index=5"  class="close-panel" title="护理园地">
+			    	<li class="cebian-li">护理园地<div class="cebian-sanjiao"></div></li>
+			    	</a>
+
+			    	<a  href="/m/jiankangbaojian?index=4" class="close-panel" title="健康小屋">
+			    	<li class="cebian-li">健康小屋<div class="cebian-sanjiao"></div></li>
+			    	</a>
+
+			    </ul>
+				
+			  </div>
+			</div>
+	<script type='text/javascript' src='/sc2016/js/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='/sc2016/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='/sc2016/js/sm-extend.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='/sc2016/js/click.js' charset='utf-8'></script>
+     <script>
+      $(document).on("click", ".my-btn", function() {
+      $.openPanel("#panel-js-demo");
+    });
+    </script>
+	<script>
+    $('.neike-ul li').each(function(i){
+                    $('.neike-ul li').eq(i).click(function(){
+                        var href = $(this).children().eq(0).attr("href");
+                        window.location.href = href+'?index='+i;
+                        return false;
+                    });
+                });
+    </script>
+	  <script>
+    $('.neike-ul4 li').each(function(i){
+                    $('.neike-ul4 li').eq(i).click(function(){
+                        var href = $(this).children().eq(0).attr("href");
+                        window.location.href = href+'?index='+i;
+                        return false;
+                    });
+                });
+    </script>
+	<script>
+    	$(document).on("click", ".double-li", function() {
+    		if($('.ul-two').css('display')=='block'){
+    			$('.double-li').css('backgroundColor','#019d90');
+	    	  $('.double-li .cebian-sanjiao').css({borderTop: '5px solid transparent',borderLeft:'5px solid #fff' ,marginTop:'0.8rem'});
+			  $(".ul-two").css('display','none');	
+    		}else{
+			$(".ul-two4").css('display','none');
+    			$('.double-li4').css('backgroundColor','#019d90');
+    			$('.double-li4 .cebian-sanjiao').css({borderTop: '5px solid transparent',borderLeft:'5px solid #fff' ,marginTop:'0.8rem'});
+				$(".ul-two2").css('display','none');
+    			$('.double-li2').css('backgroundColor','#019d90');
+    			$('.double-li2 .cebian-sanjiao').css({borderTop: '5px solid transparent',borderLeft:'5px solid #fff' ,marginTop:'0.8rem'});
+				$(".ul-two3").css('display','none');
+    			$('.double-li3').css('backgroundColor','#019d90');
+    			$('.double-li3 .cebian-sanjiao').css({borderTop: '5px solid transparent',borderLeft:'5px solid #fff' ,marginTop:'0.8rem'});
+    		  $('.double-li').css('backgroundColor','#016f66');
+	    	  $('.double-li .cebian-sanjiao').css({borderTop: '5px solid #fff',borderLeft:'5px solid transparent' ,marginTop:'1rem'});
+			  $(".ul-two").css('display','block');
+    		}  		
+		});
+	$(document).on("click", ".double-li2", function() {
+    		if($('.ul-two2').css('display')=='block'){
+    			$('.double-li2').css('backgroundColor','#019d90');
+	    	  $('.double-li2 .cebian-sanjiao').css({borderTop: '5px solid transparent',borderLeft:'5px solid #fff' ,marginTop:'0.8rem'});
+			  $(".ul-two2").css('display','none');	
+    		}else{
+			$(".ul-two").css('display','none');
+    			$('.double-li').css('backgroundColor','#019d90');
+    			$('.double-li .cebian-sanjiao').css({borderTop: '5px solid transparent',borderLeft:'5px solid #fff' ,marginTop:'0.8rem'});
+				$(".ul-two4").css('display','none');
+    			$('.double-li4').css('backgroundColor','#019d90');
+    			$('.double-li4 .cebian-sanjiao').css({borderTop: '5px solid transparent',borderLeft:'5px solid #fff' ,marginTop:'0.8rem'});
+				$(".ul-two3").css('display','none');
+    			$('.double-li3').css('backgroundColor','#019d90');
+    			$('.double-li3 .cebian-sanjiao').css({borderTop: '5px solid transparent',borderLeft:'5px solid #fff' ,marginTop:'0.8rem'});
+    		  $('.double-li2').css('backgroundColor','#016f66');
+	    	  $('.double-li2 .cebian-sanjiao').css({borderTop: '5px solid #fff',borderLeft:'5px solid transparent' ,marginTop:'1rem'});
+			  $(".ul-two2").css('display','block');
+    		}  		
+		});
+	$(document).on("click", ".double-li3", function() {
+    		if($('.ul-two3').css('display')=='block'){
+    			$('.double-li3').css('backgroundColor','#019d90');
+	    	  $('.double-li3 .cebian-sanjiao').css({borderTop: '5px solid transparent',borderLeft:'5px solid #fff' ,marginTop:'0.8rem'});
+			  $(".ul-two3").css('display','none');	
+    		}else{
+			$(".ul-two").css('display','none');
+    			$('.double-li').css('backgroundColor','#019d90');
+    			$('.double-li .cebian-sanjiao').css({borderTop: '5px solid transparent',borderLeft:'5px solid #fff' ,marginTop:'0.8rem'});
+				$(".ul-two2").css('display','none');
+    			$('.double-li2').css('backgroundColor','#019d90');
+    			$('.double-li2 .cebian-sanjiao').css({borderTop: '5px solid transparent',borderLeft:'5px solid #fff' ,marginTop:'0.8rem'});
+				$(".ul-two4").css('display','none');
+    			$('.double-li4').css('backgroundColor','#019d90');
+    			$('.double-li4 .cebian-sanjiao').css({borderTop: '5px solid transparent',borderLeft:'5px solid #fff' ,marginTop:'0.8rem'});
+    		  $('.double-li3').css('backgroundColor','#016f66');
+	    	  $('.double-li3 .cebian-sanjiao').css({borderTop: '5px solid #fff',borderLeft:'5px solid transparent' ,marginTop:'1rem'});
+			  $(".ul-two3").css('display','block');
+    		}  		
+		});
+	$(document).on("click", ".double-li4", function() {
+    		if($('.ul-two4').css('display')=='block'){
+    			$('.double-li4').css('backgroundColor','#019d90');
+	    	  $('.double-li4 .cebian-sanjiao').css({borderTop: '5px solid transparent',borderLeft:'5px solid #fff' ,marginTop:'0.8rem'});
+			  $(".ul-two4").css('display','none');	
+    		}else{
+			$(".ul-two").css('display','none');
+    			$('.double-li').css('backgroundColor','#019d90');
+    			$('.double-li .cebian-sanjiao').css({borderTop: '5px solid transparent',borderLeft:'5px solid #fff' ,marginTop:'0.8rem'});
+				$(".ul-two2").css('display','none');
+    			$('.double-li2').css('backgroundColor','#019d90');
+    			$('.double-li2 .cebian-sanjiao').css({borderTop: '5px solid transparent',borderLeft:'5px solid #fff' ,marginTop:'0.8rem'});
+				$(".ul-two3").css('display','none');
+    			$('.double-li3').css('backgroundColor','#019d90');
+    			$('.double-li3 .cebian-sanjiao').css({borderTop: '5px solid transparent',borderLeft:'5px solid #fff' ,marginTop:'0.8rem'});
+    		  $('.double-li4').css('backgroundColor','#016f66');
+	    	  $('.double-li4 .cebian-sanjiao').css({borderTop: '5px solid #fff',borderLeft:'5px solid transparent' ,marginTop:'1rem'});
+			  $(".ul-two4").css('display','block');
+    		}  		
+		});		
+    </script>

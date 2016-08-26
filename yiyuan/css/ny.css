@@ -1,0 +1,443 @@
+@charset "gb2312";
+.nybanner {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.position {
+	color: #a8a8a8;
+	padding-bottom: 20px;
+	font-size: 14px;
+}
+.ny_left {
+	float: left;
+	width: 28%;
+}
+.ny_right {
+	float: right;
+	width: 68%;
+}
+.ny_left .nyro1 {
+	padding-bottom: 20px;
+}
+
+.ny_left .nyro1 h3 {
+	background-image: url(../images/nyd_07.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 46px;
+	font-size: 16px;
+	line-height: 46px;
+	color: #fff;
+	padding-left: 20px;
+}
+.ny_left .nyro1 .nyro1bg {
+	background-color: #cae6e7;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+	-webkit-border-radius: 5px;   /* Webkit browsers */
+	border-radius: 5px;
+}
+.ny_left .nyro1 .nyro1bg ul li {
+	font-size: 16px;
+	line-height: 40px;
+	width: 87%;
+	margin-right: auto;
+	margin-left: auto;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #65c4c0;
+}
+.ny_left .nyro1 .nyro1bg ul li a {
+	display: block;
+	color:#000;
+}
+.ny_left .nyro2 .nyro2tit {
+	background-image: url(../images/nyro2tit_10.png);
+	  background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 48px;
+	padding-left: 40%;
+}
+.ny_left .nyro2 .nyro2tit li {
+	font-size: 14px;
+	text-align: center;
+	float: left;
+	width: 30%;
+	line-height: 46px;
+}
+.ny_left .nyro2 .nyro2tit .hover {
+	background-image: url(../images/hoverbg_11.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 48px;
+	width: 30%;
+}
+.ny_left .nyro2 .nyro2text {
+	background-image: url(../images/nybg_15.png);
+	  background-size: 100% 320px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 280px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 15px;
+}
+.ny_left .nyro2 .nyro2text li {
+	background-image: url(../images/nydian_18.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 26px;
+	font-size: 14px;
+	line-height: 40px;
+	height: 40px;
+}
+.ny_right .nyrtit {
+	font-size: 20px;
+	font-weight: bold;
+	color: #009e8e;
+	line-height: 46px;
+	padding-bottom: 15px;
+}
+.ny_right .hlyd {
+	padding-bottom: 15px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #cceceb;
+	margin-bottom: 15px;
+}
+.ny_right .hlyd h3 {
+	background-image: url(../images/fl_11.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 20px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.ny_right .hlyd p {
+	font-size: 12px;
+	line-height: 26px;
+	color: #333;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.ny_right .page {
+	padding-top: 15px;
+}
+
+.ny_right .page li {
+	float: left;
+	margin-right: 3px;
+	margin-left: 3px;
+}
+.ny_right .page .clear li a {
+	padding: 4px;
+	color: #30b6ab;
+	display: block;
+	border: 1px solid #ccc;
+}
+.ny_right .jkxwtit {
+	background-image: url(../images/jkxwtit_03.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 68px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	padding-left: 40px;
+	line-height: 68px;
+}
+.ny_right .jkxwbg {
+	background-image: url(../images/jkbg_07.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-bottom: 30px;
+	margin-top: 15px;
+	padding-top: 30px;
+}
+.ny_right .jkxwbg ul li {
+	background-image: url(../images/nydian_18.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	width: 85%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 20px;
+	font-size: 14px;
+	line-height: 40px;
+	height: 40px;
+}
+.ksjsbg {
+	background-image: url(../images/ksbg_03.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 291px;
+	width: 872px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.ksjsbg .ksleft  {
+	float: left;
+	width: 480px;
+}
+.ksleft ul li {
+	background-image: url(../images/nydian_18.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	width: 430px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 20px;
+	line-height: 46px;
+	height: 46px;
+	font-size: 14px;
+}
+.ksright {
+	float: left;
+	width: 367px;
+}
+.column1_left {
+	width: 367px;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid #CCC;
+	padding: 2px
+}
+.container {
+	width: 367px;
+	height: 280px;
+	overflow: hidden;
+	position: relative;
+	background: #000
+}
+.slider li { list-style:none; display:inline; }
+.slider img {
+	width: 367px;
+	height: 255px;
+	display: block;
+	border: 0;
+}
+.slider2 li { float:left; position:relative }
+.num { position:absolute; right:120px; bottom:4px; height:20px; _bottom:1px; }
+.num li { float: left; width:21px; height:20px; background:url(../images/ink0721hui.png) no-repeat center center; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/ink0721hui.png', sizingMethod='crop');
+cursor: pointer; overflow: hidden; }
+.num li.on {
+	background: url(../images/ink0721hui1.png) no-repeat center center;
+	_background: none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/ink0721hui1.png', sizingMethod='crop');
+	width: 21px;
+	height: 20px;
+}
+.idSiideer_pos{
+	height: 27px;
+	line-height: 27px;
+	color: #FFF;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 367px;
+	z-index: 10;
+	text-align: center;
+}
+.idSiideer_pos2{
+	height: 27px;
+	background: #000;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 367px;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+.kesame h3 {
+	font-size: 16px;
+	line-height: 47px;
+	color: #fff;
+	background-image: url(../images/kstit_11.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	height: 47px;
+	padding-left: 100px;
+}
+.kesame h3 span {
+	padding-left: 650px;
+}
+
+.kesame h3 span a {
+	font-size: 12px;
+	color: #6c6e6d;
+}
+.kesame .ksbgsame {
+	background-image: url(../images/ksbg1_14.png);
+	height: 306px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+	background-repeat: no-repeat;
+	background-position: right top;
+	padding-left: 60px;
+}
+.kesame .ksbgsame .kstext {
+	background-color: #c9e7e7;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+	-webkit-border-radius: 5px;   /* Webkit browsers */
+	border-radius: 5px;
+}
+.kesame .ksbgsame .kstext .kstit {
+	font-size: 16px;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+}
+.kesame .ksbgsame .kstext .ksjsleft {
+	text-align: center;
+	width: 80px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+}
+.kesame .ksbgsame .kstext .ksjsright {
+	float: left;
+	width: 660px;
+	line-height: 24px;
+}
+.kstdtit {
+	font-size: 16px;
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.ksbgsame ul li {
+	width: 780px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 20px;
+	background-image: url(../images/nydian_18.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	font-size: 14px;
+	line-height: 36px;
+	height: 36px;
+}
+.mysearch {
+	background-image: url(../images/mysearchbg_03.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 135px;
+	background-color: #C9E5E6;
+	padding-bottom: 20px;
+}
+.mysearch h4 {
+	font-size: 18px;
+	color: #009c8e;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+.mysearch .sar {
+	background-color: #fff;
+	width: 1280px;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 60px;
+	height: 60px;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+	-webkit-border-radius: 5px;   /* Webkit browsers */
+	border-radius: 5px;
+	color: #03A39B;
+}
+.contents .mysearch .sar div {
+	float: left;
+	width: 213px;
+	text-align: center;
+	font-size: 14px;
+}
+.sar.clear .sar5 #mohu {
+	width: 100px;
+	height: 20px;
+}
+.sar.clear .sar6 {
+	padding-top: 13px;
+}
+.mytit2 {
+	line-height: 47px;
+	color: #fff;
+	background-image: url(../images/mytit2_09.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 47px;
+	padding-left: 80px;
+	font-size: 16px;
+}
+.nyro3 ul li {
+	float: left;
+	width: 127px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.nyro1 h3 span {
+	font-size: 12px;
+	padding-left: 200px;
+}
+.nyro1 .online {
+	padding-top: 15px;
+}
+
+.nyro1 .online li {
+	line-height: 36px;
+	background-image: url(../images/nydian_18.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 36px;
+	width: 320px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 20px;
+	font-size: 16px;
+}
+.ny_right h2 {
+	text-align: center;
+	color: #67B8B1;
+	font-size: 20px;
+	padding-bottom: 15px;
+}
+.small {
+	text-align: center;
+	color: #b5b5b7;
+	padding-bottom: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #b5b5b7;
+	margin-bottom: 15px;
+}
+.article {
+	font-size: 14px;
+	line-height: 28px;
+}
+.lgjstit {
+	background-color: #CAE6E7;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 18px;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+	-webkit-border-radius: 5px;   /* Webkit browsers */
+	border-radius: 5px;
+}
+.jstext {
+	font-size: 14px;
+	line-height: 30px;
+	margin-top: 20px;
+}

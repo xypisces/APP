@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="/sc2016/css/sm.css">
+    <link rel="stylesheet" href="/sc2016/css/sm-extend.min.css">
+    <link rel="stylesheet" href="/sc2016/css/style.css">
+
+  </head>
+  <body>
+     <div class="page-group">
+        <div class="page page-current">
+             <!-- 头部  -->
+            <header class="bar bar-nav">
+              <a href="javascript:history.go(-1);" class="view-head pull-left">
+                <img src="/sc2016/img/fanhui.png" alt="返回" class="head-img">
+              </a>
+              <span class="head-span">检验科</span>
+              <a href="#" class="my-btn pull-right view-head2"><img src="/sc2016/img/more.png" alt="导航" class="head-img2"></a>
+            </header>
+
+
+                <div class="content">
+				  <div class="article-img">
+                      <img src="/sc2016/kq/keshi/jyk.png" alt="图片">
+                    </div>
+                    <ul class="neike-ul2 clearfix">
+                      <li class="neike-li2">
+                        <a href="/m/jianyanke"  >科室首页</a>
+                      </li>
+                      <li class="neike-li2">
+                        <a href="/m/jianyanke/keshijianjie"  >科室简介</a>
+                      </li>
+                      <li class="neike-li2">
+                       <a href="/m/jianyanke/xinwendongtai"  >新闻动态</a>
+                      </li>
+                      <li class="neike-li2">
+                        <a href="/m/jianyanke/dianxingbingli"  >典型病例</a>
+                      </li>
+                      <li class="neike-li2">
+                        <a href="/m/jianyanke/jishufazhan"  >技术发展</a>
+                      </li>
+                    </ul>
+
+                    <ul class="neike-ul3 clearfix">
+                      <li class="neike-li3">
+                        <a href="/m/jianyanke/keyanjiaoxue"  >科研教学</a>
+                      </li>
+                      <li class="neike-li3">
+                        <a href="/m/jianyanke/yiliaoshebei"  >医疗设备</a>
+                      </li>
+                      <li class="neike-li3">
+                       <a href="/m/jianyanke/jiankangbaojian"  >健康保健</a>
+                      </li>
+                      <li class="neike-li3">
+                        <a href="/m/wangshangfuwudating"  >就医指南</a>
+                      </li>
+                    </ul>
+
+                   
+                    
+                    <h4 class="article-h4">{dede:field name='typename'/}</h4>
+                    <div class="about-text">
+                      <p>
+					  {dede:sql sql="SELECT  *  FROM `dede_arctype` WHERE `id` = 39"}
+
+					   [field:content/]
+
+					  {/dede:sql}
+                      </p>
+                    </div>
+              </div>
+            </div>
+
+        </div>
+     </div>
+    <!-- 侧边栏?-->
+      {dede:include filename="footer.htm"/} 
+     
+
+  </body>
+</html>
