@@ -8,7 +8,7 @@
             <a v-link="{path:'/ratings'}">评论</a>
         </div>
         <div class="tab-item">
-            <a v-link="{path:'/seller'}">商铺</a>
+            <a v-link="{path:'/seller'}">商店</a>
         </div>
     </div>
     <router-view></router-view>
