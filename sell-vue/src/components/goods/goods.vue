@@ -26,7 +26,11 @@
 									<span class="count">月售{{food.sellCount}}份</span><span>好评率{{food.rating}}%</span>
 								</div>
 								<div class="price">
-									<span class="now">¥{{food.price}}</span><span class="old" v-show="food.oldPrice">¥{{food.oldPrice}}</span>
+									<span class="now">¥{{food.price}}</span><span class="old"
+																																v-show="food.oldPrice">¥{{food.oldPrice}}</span>
+								</div>
+								<div class="cartcontrol-wrapper">
+									<cartcontrol :food="food"></cartcontrol>
 								</div>
 							</div>
 						</li>
@@ -34,13 +38,15 @@
 				</li>
 			</ul>
 		</div>
-		<shopcart :delivery-price="seller.deliveryPrice" :min-price="seller.minPrice"></shopcart>
+		<shopcart :select-foods="selectFoods" :delivery-price="seller.deliveryPrice"
+							:min-price="seller.minPrice"></shopcart>
 	</div>
 </template>
 
 <script type="text/ecmascript-6">
 	import BScroll from 'better-scroll';
 	import shopcart from 'components/shopcart/shopcart';
+	import cartcontrol from 'components/cartcontrol/carcontrol';
 	const ERR_OK = 0;
 	export default {
 		props: {
@@ -56,7 +62,8 @@
 			};
 		},
 		components: {
-			shopcart
+			shopcart,
+			cartcontrol
 		},
 		computed: {
 			currentIndex() {
@@ -68,6 +75,17 @@
 					}
 				}
 				return 0;
+			},
+			selectFoods() {
+				let foods = [];
+				this.goods.forEach((good) => {
+					good.foods.forEach((food) => {
+						if (food.count) {
+							foods.push(food);
+						}
+					});
+				});
+				return foods;
 			}
 		},
 		created() {
@@ -97,7 +115,8 @@
 					click: true
 				});
 				this.foodsScroll = new BScroll(this.$els.foodsWrapper, {
-					probeType: 3
+					probeType: 3,
+					click: true
 				});
 
 				this.foodsScroll.on('scroll', (pos) => {
@@ -218,5 +237,10 @@
 							text-decoration: line-through
 							font-size: 10px
 							color: rgb(147, 153, 159)
+
+					.cartcontrol-wrapper
+						position: absolute
+						bottom: 12px
+						right: 0
 
 </style>

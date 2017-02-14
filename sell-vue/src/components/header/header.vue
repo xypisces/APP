@@ -78,6 +78,12 @@
 				detailShow: false
 			};
 		},
+		created() {
+			this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee'];
+		},
+		components: {
+			star
+		},
 		methods: {
 			showDetail() {
 				this.detailShow = true;
@@ -85,12 +91,6 @@
 			hideDetail() {
 				this.detailShow = false;
 			}
-		},
-		created() {
-			this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee'];
-		},
-		components: {
-			star
 		}
 	};
 
@@ -226,7 +226,7 @@
 				opacity: 1
 				background: rgba(7, 17, 27, 0.8)
 			&.fade-enter, &.fade-leave
-				opacity: 1
+				opacity: 0
 				background: rgba(7, 17, 27, 0)
 			.detail-wrapper
 				min-height: 100%

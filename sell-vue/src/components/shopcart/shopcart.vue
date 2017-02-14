@@ -26,12 +26,7 @@
 			selectFoods: {
 				type: Array,
 				default() {
-					return [
-						{
-							price: 10,
-							count: 2
-						}
-					];
+					return [];
 				}
 			},
 			deliveryPrice: {
@@ -129,7 +124,7 @@
 						line-height: 16px
 						text-align: center
 						border-radius: 16px
-						font-size: 9px
+						font-size: 12px
 						font-weight: 700
 						color: #fff
 						background: rgb(240, 20, 20)
