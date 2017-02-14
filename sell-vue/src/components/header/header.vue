@@ -221,7 +221,7 @@
 			width: 100%
 			height: 100%
 			overflow: auto
-			transition: all 0.5s 
+			transition: all 0.5s
 			&.fade-transition
 				opacity: 1
 				background: rgba(7, 17, 27, 0.8)
