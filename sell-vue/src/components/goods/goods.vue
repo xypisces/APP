@@ -39,7 +39,7 @@
 			</ul>
 		</div>
 		<shopcart :select-foods="selectFoods" :delivery-price="seller.deliveryPrice"
-							:min-price="seller.minPrice"></shopcart>
+							:min-price="seller.minPrice" v-ref:shopcart></shopcart>
 	</div>
 </template>
 
@@ -56,7 +56,7 @@
 		},
 		data() {
 			return {
-				goods: {},
+				goods: [],
 				listHeight: [],
 				scrollY: 0
 			};
@@ -64,6 +64,11 @@
 		components: {
 			shopcart,
 			cartcontrol
+		},
+		events: {
+			'cart.add'(target) {
+				this._drop(target);
+			}
 		},
 		computed: {
 			currentIndex() {
@@ -109,6 +114,12 @@
 				let foodList = this.$els.foodsWrapper.getElementsByClassName('food-list-hook');
 				let el = foodList[index];
 				this.foodsScroll.scrollToElement(el, 300);
+			},
+			_drop(target) {
+				// 体验优化,异步执行
+				this.$nextTick(() => {
+					this.$refs.shopcart.drop(target);
+				});
 			},
 			_initScroll() {
 				this.menuScroll = new BScroll(this.$els.menuWrapper, {

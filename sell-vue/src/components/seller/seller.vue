@@ -1,6 +1,6 @@
 <template>
    <div>
-       i am seller.
+       这里是商家页面
    </div>
 </template>
 

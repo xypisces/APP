@@ -1,6 +1,6 @@
 <template>
     <div>
-        i am ratings..
+        这里是评论页面
     </div>
 </template>
 
